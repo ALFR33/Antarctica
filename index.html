@@ -1,30 +1,18 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2244311957196913"
-     crossorigin="anonymous"></script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2244311957196913"
-     crossorigin="anonymous"></script>
-<!-- 643347347 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2244311957196913"
-     data-ad-slot="7912132572"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antarctica | Official Portal of Marie Byrd Land - heib12</title>
+    <title>Antarctica | البوابة الرسمية لأرض ماري بيرد - heib12</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2244311957196913"
+         crossorigin="anonymous"></script>
     <style>
         :root {
             --bg-dark: #050c17;
-            --bg-card: rgba(13, 27, 48, 0.78);
+            --bg-card: rgba(13, 27, 48, 0.85);
             --accent-ice: #38bdf8;
             --accent-cyan: #7dd3fc;
             --text-main: #f8fafc;
@@ -46,7 +34,7 @@
             font-family: 'Cairo', 'Inter', sans-serif;
             background-color: var(--bg-dark);
             color: var(--text-main);
-            line-height: 1.75;
+            line-height: 1.78;
             overflow-x: hidden;
         }
 
@@ -60,16 +48,25 @@
             z-index: 999;
         }
 
-        /* الشريط العلوي */
+        .ad-slot-box {
+            max-width: 1180px;
+            margin: 22px auto;
+            padding: 10px 20px;
+            background: rgba(10, 21, 38, 0.72);
+            border: 1px dashed rgba(125, 211, 252, 0.28);
+            border-radius: 12px;
+            text-align: center;
+        }
+
         header {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(5, 12, 23, 0.9);
+            background: rgba(5, 12, 23, 0.93);
             backdrop-filter: blur(14px);
             border-bottom: 1px solid var(--border-glass);
             z-index: 1000;
-            padding: 12px 4%;
+            padding: 12px 3.5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -82,6 +79,7 @@
             gap: 10px;
             text-decoration: none;
             color: var(--text-main);
+            flex-shrink: 0;
         }
 
         .logo-badge {
@@ -95,28 +93,29 @@
         }
 
         .logo-title {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             font-weight: 800;
         }
 
         .nav-group {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 16px;
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 16px;
         }
 
         nav a {
             color: var(--text-muted);
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.92rem;
+            font-size: 0.88rem;
             transition: color 0.3s;
+            white-space: nowrap;
         }
 
         nav a:hover {
@@ -130,33 +129,49 @@
             border-radius: 8px;
             padding: 6px 12px;
             font-family: inherit;
-            font-size: 0.88rem;
+            font-size: 0.86rem;
             font-weight: 700;
             cursor: pointer;
             outline: none;
         }
 
-        /* القسم الرئيسي Hero بصورة حقيقية من مضيق جيرلاش - أنتاركتيكا */
         .hero {
             position: relative;
-            min-height: 92vh;
+            min-height: 88vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             padding: 120px 20px 70px;
-            background: linear-gradient(to bottom, rgba(5, 12, 23, 0.52), rgba(5, 12, 23, 0.96)),
-                        url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Antarctica_2013_Journey_to_the_Crystal_Desert_%288370623298%29.jpg/1600px-Antarctica_2013_Journey_to_the_Crystal_Desert_%288370623298%29.jpg') center/cover no-repeat;
+            overflow: hidden;
+        }
+
+        .hero-bg-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            filter: brightness(0.45) contrast(1.08);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(5, 12, 23, 0.45), rgba(5, 12, 23, 0.96));
+            z-index: 1;
         }
 
         .hero-content {
-            max-width: 880px;
+            max-width: 900px;
+            position: relative;
             z-index: 2;
         }
 
         .official-tag {
             display: inline-block;
-            background: rgba(56, 189, 248, 0.16);
+            background: rgba(56, 189, 248, 0.18);
             border: 1px solid var(--accent-ice);
             color: var(--accent-cyan);
             padding: 6px 18px;
@@ -167,11 +182,11 @@
         }
 
         .hero h1 {
-            font-size: clamp(2.1rem, 5vw, 3.7rem);
+            font-size: clamp(2.1rem, 5vw, 3.65rem);
             font-weight: 900;
             line-height: 1.25;
             margin-bottom: 18px;
-            text-shadow: 0 4px 24px rgba(0, 0, 0, 0.75);
+            text-shadow: 0 4px 24px rgba(0, 0, 0, 0.85);
         }
 
         .hero h1 span {
@@ -181,26 +196,29 @@
         .hero p {
             font-size: 1.12rem;
             color: #e2e8f0;
-            margin-bottom: 32px;
+            margin-bottom: 30px;
         }
 
         .hero-buttons {
             display: flex;
-            gap: 16px;
+            gap: 14px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .btn {
-            padding: 13px 28px;
+            padding: 12px 24px;
             border-radius: 10px;
             font-weight: 700;
             text-decoration: none;
-            font-size: 0.98rem;
+            font-size: 0.95rem;
             transition: transform 0.25s, box-shadow 0.25s;
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
         }
 
         .btn-primary {
@@ -211,11 +229,10 @@
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 30px rgba(56, 189, 248, 0.5);
         }
 
         .btn-outline {
-            background: rgba(15, 29, 50, 0.78);
+            background: rgba(15, 29, 50, 0.82);
             color: var(--text-main);
             border: 1px solid var(--border-glass);
         }
@@ -225,10 +242,9 @@
             transform: translateY(-2px);
         }
 
-        /* شريط الإحصائيات */
         .stats-bar {
-            max-width: 1160px;
-            margin: -45px auto 40px;
+            max-width: 1180px;
+            margin: -45px auto 35px;
             padding: 0 20px;
             position: relative;
             z-index: 10;
@@ -236,30 +252,30 @@
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 18px;
-            background: rgba(10, 21, 38, 0.94);
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 16px;
+            background: rgba(10, 21, 38, 0.95);
             backdrop-filter: blur(16px);
             border: 1px solid var(--border-glass);
             border-radius: 16px;
-            padding: 24px;
+            padding: 22px;
             box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
         }
 
         .stat-item {
             text-align: center;
-            padding: 8px;
+            padding: 6px;
         }
 
         .stat-value {
-            font-size: 1.65rem;
+            font-size: 1.6rem;
             font-weight: 900;
             color: var(--accent-ice);
             direction: ltr;
         }
 
         .stat-label {
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             color: var(--text-muted);
             margin-top: 4px;
         }
@@ -267,18 +283,18 @@
         section {
             max-width: 1180px;
             margin: 0 auto;
-            padding: 70px 20px;
+            padding: 52px 20px;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 45px;
+            margin-bottom: 34px;
         }
 
         .section-header h2 {
-            font-size: 2rem;
+            font-size: 1.95rem;
             font-weight: 800;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .section-header h2 span {
@@ -287,48 +303,270 @@
 
         .section-header p {
             color: var(--text-muted);
-            max-width: 700px;
+            max-width: 760px;
             margin: 0 auto;
         }
 
-        /* البطاقات المعرفية */
         .info-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 22px;
         }
 
         .card {
             background: var(--bg-card);
             border: 1px solid var(--border-glass);
             border-radius: 16px;
-            padding: 26px;
+            padding: 24px;
             transition: transform 0.3s, border-color 0.3s;
         }
 
         .card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-4px);
             border-color: var(--accent-ice);
         }
 
         .card-icon {
-            font-size: 1.9rem;
-            margin-bottom: 12px;
+            font-size: 1.85rem;
+            margin-bottom: 10px;
             display: inline-block;
         }
 
         .card h3 {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             color: var(--accent-cyan);
             margin-bottom: 10px;
         }
 
         .card p {
             color: #cbd5e1;
-            font-size: 0.96rem;
+            font-size: 0.95rem;
         }
 
-        /* الخريطة التفاعلية */
+        .discovery-banner {
+            background: linear-gradient(135deg, rgba(14, 41, 68, 0.85), rgba(10, 22, 42, 0.92));
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            border-radius: 20px;
+            padding: 34px 24px;
+        }
+
+        .highlight-tag {
+            display: inline-block;
+            background: rgba(251, 191, 36, 0.16);
+            color: #fde68a;
+            border: 1px solid rgba(251, 191, 36, 0.35);
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .volcano-section {
+            background: linear-gradient(145deg, rgba(15, 29, 50, 0.9), rgba(32, 16, 34, 0.78));
+            border: 1px solid rgba(251, 113, 133, 0.32);
+            border-radius: 20px;
+            padding: 34px 24px;
+        }
+
+        .volcano-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        .volcano-card {
+            background: rgba(5, 12, 23, 0.78);
+            border: 1px solid rgba(251, 113, 133, 0.25);
+            border-radius: 14px;
+            padding: 20px;
+        }
+
+        .volcano-badge {
+            display: inline-block;
+            background: rgba(251, 113, 133, 0.16);
+            color: #fda4af;
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .volcano-card h4 {
+            font-size: 1.12rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .volcano-card p {
+            font-size: 0.92rem;
+            color: #cbd5e1;
+        }
+
+        .studio-wrapper {
+            background: linear-gradient(145deg, rgba(9, 20, 38, 0.96), rgba(4, 10, 20, 0.98));
+            border: 1px solid rgba(56, 189, 248, 0.38);
+            border-radius: 20px;
+            padding: 26px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+        }
+
+        .scene-tabs {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 18px;
+        }
+
+        .scene-tab {
+            background: rgba(15, 29, 50, 0.85);
+            color: var(--text-muted);
+            border: 1px solid var(--border-glass);
+            padding: 9px 18px;
+            border-radius: 10px;
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .scene-tab.active, .scene-tab:hover {
+            background: linear-gradient(135deg, #0284c7, #38bdf8);
+            color: #050c17;
+            border-color: #38bdf8;
+        }
+
+        .cinema-screen {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(125, 211, 252, 0.3);
+            background: #02060d;
+        }
+
+        .polar-slide-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.7s ease, transform 8s ease;
+            transform: scale(1.04);
+        }
+
+        .cinema-hud-top {
+            position: absolute;
+            top: 14px;
+            left: 16px;
+            right: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        .rec-badge {
+            background: rgba(5, 12, 23, 0.82);
+            border: 1px solid rgba(56, 189, 248, 0.45);
+            color: var(--accent-cyan);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .watermark-tag {
+            background: rgba(5, 12, 23, 0.78);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-weight: 900;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .cinema-subtitles {
+            position: absolute;
+            bottom: 62px;
+            left: 20px;
+            right: 20px;
+            text-align: center;
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        .subtitle-box {
+            display: inline-block;
+            background: rgba(3, 8, 18, 0.85);
+            border: 1px solid rgba(125, 211, 252, 0.25);
+            padding: 9px 20px;
+            border-radius: 10px;
+            max-width: 780px;
+            color: #f8fafc;
+            font-size: 0.98rem;
+            font-weight: 600;
+        }
+
+        .cinema-controls {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(2, 6, 13, 0.96), rgba(2, 6, 13, 0.75));
+            padding: 11px 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 3;
+        }
+
+        .ctrl-btn {
+            background: rgba(56, 189, 248, 0.2);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(56, 189, 248, 0.45);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 0.84rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .ctrl-btn:hover {
+            background: rgba(56, 189, 248, 0.35);
+        }
+
+        .progress-track {
+            flex: 1;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 99px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #0284c7, #38bdf8);
+            transition: width 0.2s linear;
+        }
+
+        .time-display {
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: var(--accent-cyan);
+            direction: ltr;
+        }
+
         .map-wrapper {
             background: var(--bg-card);
             border: 1px solid var(--border-glass);
@@ -366,18 +604,17 @@
             border-radius: 12px;
         }
 
-        /* معرض الصور الحقيقية الموثقة من القارة القطبية الجنوبية */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 22px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
 
         .gallery-item {
             position: relative;
             border-radius: 14px;
             overflow: hidden;
-            height: 290px;
+            height: 270px;
             border: 1px solid var(--border-glass);
             background: #0b172a;
         }
@@ -386,6 +623,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
             transition: transform 0.5s ease;
         }
 
@@ -398,22 +636,21 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(to top, rgba(5, 12, 23, 0.96), rgba(5, 12, 23, 0.4) 70%, transparent);
-            padding: 28px 16px 14px;
+            background: linear-gradient(to top, rgba(5, 12, 23, 0.96), rgba(5, 12, 23, 0.45) 70%, transparent);
+            padding: 26px 16px 14px;
         }
 
         .gallery-caption h4 {
-            font-size: 1.05rem;
+            font-size: 1.02rem;
             color: #fff;
             margin-bottom: 2px;
         }
 
         .gallery-caption span {
-            font-size: 0.84rem;
+            font-size: 0.82rem;
             color: var(--accent-cyan);
         }
 
-        /* التذييل والحقوق */
         footer {
             background: #03070e;
             border-top: 1px solid var(--border-glass);
@@ -431,7 +668,7 @@
 
         .footer-desc {
             color: var(--text-muted);
-            max-width: 620px;
+            max-width: 640px;
             margin: 0 auto 20px;
             font-size: 0.94rem;
         }
@@ -449,9 +686,12 @@
             letter-spacing: 0.5px;
         }
 
-        @media (max-width: 820px) {
+        @media (max-width: 980px) {
             nav ul {
                 display: none;
+            }
+            .cinema-screen {
+                height: 360px;
             }
             .map-frame {
                 height: 340px;
@@ -463,7 +703,6 @@
 
     <canvas id="snow-canvas"></canvas>
 
-    <!-- الشريط العلوي -->
     <header>
         <a href="#" class="logo">
             <span class="logo-badge">ANTARCTICA</span>
@@ -473,52 +712,58 @@
             <nav>
                 <ul>
                     <li><a href="#overview" data-i18n="nav_overview">عن القارة</a></li>
-                    <li><a href="#details" data-i18n="nav_details">الشرح المفصل</a></li>
-                    <li><a href="#map" data-i18n="nav_map">الخريطة الرسمية</a></li>
-                    <li><a href="#gallery" data-i18n="nav_gallery">صور القطب الجنوبي</a></li>
+                    <li><a href="#inside" data-i18n="nav_inside">ماذا يوجد بها؟</a></li>
+                    <li><a href="#discoveries" data-i18n="nav_discoveries">اكتشافات كبرى</a></li>
+                    <li><a href="#volcanoes" data-i18n="nav_volcanoes">البراكين</a></li>
+                    <li><a href="#polar-showcase" data-i18n="nav_videos">صور القطب والموسيقى</a></li>
+                    <li><a href="#map" data-i18n="nav_map">الخريطة</a></li>
+                    <li><a href="#gallery" data-i18n="nav_gallery">المعرض</a></li>
                 </ul>
             </nav>
             <select id="language-selector" class="lang-select" aria-label="Select Language">
                 <option value="ar">العربية (AR)</option>
                 <option value="en">English (EN)</option>
-                <option value="ru">Русский (RU)</option>
-                <option value="fr">Français (FR)</option>
-                <option value="es">Español (ES)</option>
-                <option value="de">Deutsch (DE)</option>
-                <option value="zh">中文 (ZH)</option>
-                <option value="ja">日本語 (JA)</option>
-                <option value="ko">한국어 (KO)</option>
-                <option value="tr">Türkçe (TR)</option>
-                <option value="pt">Português (PT)</option>
-                <option value="it">Italiano (IT)</option>
-                <option value="hi">हिन्दी (HI)</option>
-                <option value="ur">اردو (UR)</option>
-                <option value="he">עברית (HE)</option>
-                <option value="fa">فارسی (FA)</option>
-                <option value="id">Bahasa Indonesia (ID)</option>
-                <option value="nl">Nederlands (NL)</option>
-                <option value="pl">Polski (PL)</option>
-                <option value="sv">Svenska (SV)</option>
             </select>
         </div>
     </header>
 
-    <!-- القسم الترحيبي الرئيسي -->
     <section class="hero" id="overview">
+        <img
+            class="hero-bg-img"
+            src="https://images.pexels.com/photos/48178/mountains-ice-bergs-antarctica-48178.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            data-fallback="https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1600&q=80"
+            onerror="handleImgError(this)"
+            alt="Antarctica Mountains and Icebergs"
+        >
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="official-tag" data-i18n="hero_tag">البوابة الرسمية للقارة القطبية الجنوبية • Antarctica Official Portal</div>
             <h1 data-i18n="hero_title">أرض ماري بيرد <span>Marie Byrd Land</span></h1>
             <p data-i18n="hero_desc">
-                القلب الجليدي البكر في غرب القارة القطبية الجنوبية (Antarctica)، وموطن جبل بيرد (Mount Byrd) والسلاسل الجبلية المغطاة بالثلوج الأبدية، وأكبر إقليم غير مطالب به على كوكب الأرض.
+                أوسع إقليم غير مطالب به على كوكب الأرض في غرب القارة القطبية الجنوبية (Antarctica)، حيث يلتقي جبل بيرد (Mount Byrd) بأكبر حزام بركاني تحت الجليد وأسرار الجغرافيا والجيولوجيا القطبية.
             </p>
             <div class="hero-buttons">
-                <a href="#map" class="btn btn-primary" data-i18n="btn_map">استعراض الخريطة التفاعلية</a>
-                <a href="#details" class="btn btn-outline" data-i18n="btn_details">قراءة الشرح المفصل</a>
+                <a href="#polar-showcase" class="btn btn-primary" data-i18n="btn_videos">صور القطب والموسيقى</a>
+                <a href="#inside" class="btn btn-outline" data-i18n="btn_inside">ماذا يوجد في أرض ماري بيرد؟</a>
+                <a href="#map" class="btn btn-outline" data-i18n="btn_map">الخريطة التفاعلية</a>
             </div>
         </div>
     </section>
 
-    <!-- شريط الإحصائيات -->
+    <!-- إعلان أدسنس رقم 1 -->
+    <div class="ad-slot-box">
+        <!-- 44411 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2244311957196913"
+             data-ad-slot="6720741348"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
     <div class="stats-bar">
         <div class="stats-grid">
             <div class="stat-item">
@@ -526,79 +771,270 @@
                 <div class="stat-label" data-i18n="stat_area">المساحة الإجمالية لأرض ماري بيرد</div>
             </div>
             <div class="stat-item">
+                <div class="stat-value">138</div>
+                <div class="stat-label" data-i18n="stat_volcanoes">بركاناً مكتشفاً تحت الجليد</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">4,000+ m</div>
+                <div class="stat-label" data-i18n="stat_ice">أقصى سُمك للغطاء الجليدي</div>
+            </div>
+            <div class="stat-item">
                 <div class="stat-value">77°10'S 144°38'W</div>
                 <div class="stat-label" data-i18n="stat_coords">إحداثيات جبل بيرد (Mount Byrd)</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-value">-60°C</div>
-                <div class="stat-label" data-i18n="stat_temp">متوسط درجات الحرارة الشتوية</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-value">1929</div>
-                <div class="stat-label" data-i18n="stat_year">عام الاكتشاف والتسمية الرسمية</div>
             </div>
         </div>
     </div>
 
-    <!-- الشرح المفصل -->
-    <section id="details">
+    <!-- إعلان أدسنس رقم 2 -->
+    <div class="ad-slot-box">
+        <!-- 44411 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2244311957196913"
+             data-ad-slot="6720741348"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <section id="inside">
+        <div class="discovery-banner">
+            <div class="section-header" style="margin-bottom: 28px;">
+                <h2 data-i18n="inside_heading">ماذا يوجد داخل <span>أرض ماري بيرد</span> وأنتاركتيكا؟</h2>
+                <p data-i18n="inside_sub">
+                    رغم أنها تبدو من الخارج مجرد صحراء جليدية بيضاء صامتة، فإن أرض ماري بيرد وغرب أنتاركتيكا تخفي عالماً كاملاً من التضاريس والبحيرات الجليدية والأنهار الجليدية السريعة.
+                </p>
+            </div>
+
+            <div class="info-grid">
+                <div class="card">
+                    <span class="highlight-tag" data-i18n="in1_badge">تضاريس جبلية</span>
+                    <h3 data-i18n="in1_title">سلاسل جبال فورد وإكزكيوتيف كوميتي</h3>
+                    <p data-i18n="in1_text">
+                        تضم نتوءات صخرية وقمماً جبلية مثل <strong>جبل بيرد (Mount Byrd)</strong> في جبال فورد، وسلسلة "إكزكيوتيف كوميتي" البركانية، وتلال هال، وتتميز بعض الجبال بقمم مسطحة أو حادة تبرز من وسط الجليد.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="highlight-tag" data-i18n="in2_badge">أنهار جليدية عملاقة</span>
+                    <h3 data-i18n="in2_title">نهر ثويتس ونهر باين آيلاند الجليديان</h3>
+                    <p data-i18n="in2_text">
+                        تتدفق أنهار جليدية هائلة من قلب غرب أنتاركتيكا وأرض ماري بيرد نحو بحر أموندسن وبحر روس، وأبرزها نهر ثويتس ونهر باين آيلاند اللذان يُعدان من أسرع الأنهار الجليدية حركة ومراقبة علمية في العالم.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="highlight-tag" data-i18n="in3_badge">مياه تحت الجليد</span>
+                    <h3 data-i18n="in3_title">بحيرات ومجاري مائية تحت الصفيحة الجليدية</h3>
+                    <p data-i18n="in3_text">
+                        بفعل الضغط الهائل والحرارة الجوفية القادمة من باطن الأرض، تتشكل شبكات مائية وبحيرات سائلة تحت كيلومترات من الجليد، وتُعد مختبراً طبيعياً لدراسة كيفية بقاء الكائنات الدقيقة في الظلام والبرودة القصوى.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="highlight-tag" data-i18n="in4_badge">سجل مناخي قديم</span>
+                    <h3 data-i18n="in4_title">أرشيف مناخي يمتد لمئات الآلاف من السنين</h3>
+                    <p data-i18n="in4_text">
+                        تختزن طبقات الجليد المتراكمة فقاعات هواء قديمة وغباراً بركانياً ورماداً من ثورانات ماضية، مما يتيح للعلماء قراءة تاريخ مناخ الأرض والغازات الجوية عبر العصور الجليدية الماضية.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- إعلان أدسنس رقم 3 -->
+    <div class="ad-slot-box">
+        <!-- 44411 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2244311957196913"
+             data-ad-slot="6720741348"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <section id="discoveries">
         <div class="section-header">
-            <h2 data-i18n="details_heading">الشرح المفصل عن <span>أرض ماري بيرد</span> والقارة القطبية</h2>
-            <p data-i18n="details_sub">دليل معرفي شامل حول جغرافيا وتاريخ والوضع القانوني لأكثر مناطق القطب الجنوبي تفرداً وغموضاً.</p>
+            <h2 data-i18n="disc_heading">أبرز <span>الاكتشافات العلمية والتاريخية</span> في المنطقة</h2>
+            <p data-i18n="disc_sub">محطات كبرى غيّرت فهم البشرية لقارة أنتاركتيكا وأرض ماري بيرد وجبل بيرد.</p>
         </div>
 
         <div class="info-grid">
             <div class="card">
-                <span class="card-icon">🧭</span>
-                <h3 data-i18n="c1_title">الموقع الجغرافي والامتداد</h3>
-                <p data-i18n="c1_text">
-                    تقع أرض ماري بيرد (Marie Byrd Land) في غرب القارة القطبية الجنوبية (Antarctica)، وتمتد شرق جرف روس الجليدي وبحر روس وجنوب المحيط الهادئ بين خطي طول 158° غرباً و103°24' غرباً، وتضم جبل بيرد (Mount Byrd) في سلسلة جبال فورد.
-                </p>
-            </div>
-
-            <div class="card">
-                <span class="card-icon">⚖️</span>
-                <h3 data-i18n="c2_title">الوضع القانوني الفريد (Terra Nullius)</h3>
-                <p data-i18n="c2_text">
-                    تُعد أرض ماري بيرد أكبر منطقة برية غير مأهولة وغير خاضعة لسيادة أي دولة في العالم؛ إذ لم تتقدم أي دولة بمطالبة رسمية لضمها قبل معاهدة القارة القطبية الجنوبية عام 1959، وتخضع بالكامل للأغراض السلمية والبحث العلمي.
-                </p>
-            </div>
-
-            <div class="card">
-                <span class="card-icon">🏔️</span>
-                <h3 data-i18n="c3_title">التاريخ والاكتشاف</h3>
-                <p data-i18n="c3_text">
-                    سُميت المنطقة عام 1929 على يد المستكشف الأدميرال الأمريكي ريتشارد إيفلين بيرد (Richard E. Byrd) تكريماً لزوجته ماري، عقب رحلاته الاستكشافية الجوية الرائدة فوق القمم الجليدية في غرب أنتاركتيكا.
-                </p>
-            </div>
-
-            <div class="card">
                 <span class="card-icon">🌋</span>
-                <h3 data-i18n="c4_title">التضاريس والبراكين الجليدية</h3>
-                <p data-i18n="c4_text">
-                    يغطي المنطقة غطاء جليدي هائل يبلغ سمكه آلاف الأمتار، تتخلله قمم بركانية شاهقة مثل جبل سيدلي (أعلى بركان في أنتاركتيكا بارتفاع 4,285 متراً) وجبل بيرد وسط العواصف الثلجية القطبية.
+                <h3 data-i18n="d1_title">اكتشاف 138 بركاناً تحت الجليد</h3>
+                <p data-i18n="d1_text">
+                    كشفت دراسات جيوفيزيائية حديثة باستخدام الرادار المخترق للجليد وبيانات الأقمار الصناعية عن وجود نحو 138 بركاناً في نظام الصدع الغربي لأنتاركتيكا وأرض ماري بيرد، يتراوح ارتفاعها من 100 متر إلى قرابة 3,850 متراً تحت الجليد.
                 </p>
             </div>
 
             <div class="card">
-                <span class="card-icon">🐧</span>
-                <h3 data-i18n="c5_title">الحياة الفطرية والبطاريق</h3>
-                <p data-i18n="c5_text">
-                    تزخر السواحل والجروف الجليدية المحيطة بمستعمرات بطريق الإمبراطور وبطريق آديلي وبطريق الجنتو، إضافة إلى الفقمات والطيور البحرية المتكيفة مع أبرد بيئة على وجه الأرض.
+                <span class="card-icon">✈️</span>
+                <h3 data-i18n="d2_title">الاستكشاف الجوي وعملية هاي جمب (Highjump)</h3>
+                <p data-i18n="d2_text">
+                    من رحلات الأدميرال ريتشارد بيرد عام 1929 وصولاً إلى بعثات المسح الجوي الواسعة مثل "عملية هاي جمب" (1946–1947)، تم تصوير آلاف الكيلومترات من السواحل والجبال المجهولة وتوثيق معالم مثل Mount Byrd.
                 </p>
             </div>
 
             <div class="card">
-                <span class="card-icon">🔬</span>
-                <h3 data-i18n="c6_title">الأبحاث العلمية والمناخ</h3>
-                <p data-i18n="c6_text">
-                    تستقطب المنطقة بعثات علمية دولية لدراسة حركة الصفائح الجليدية في غرب القارة القطبية الجنوبية نحو بحر أموندسن وتأثيرها المباشر على المناخ ومستوى البحار العالمي.
+                <span class="card-icon">🛰️</span>
+                <h3 data-i18n="d3_title">رسم تضاريس الصخر الأساسي (Bedmap)</h3>
+                <p data-i18n="d3_text">
+                    مكنت قياسات الرادار الجوي والجاذبية العلماء من رسم خرائط لما تحت الجليد في أنتاركتيكا، مبينة أن أجزاء واسعة من أرضها الصخرية في غرب القارة تقع دون مستوى سطح البحر لولا ثقل الجليد والتضاريس المحيطة.
+                </p>
+            </div>
+
+            <div class="card">
+                <span class="card-icon">📜</span>
+                <h3 data-i18n="d4_title">معاهدة القارة القطبية الجنوبية (1959)</h3>
+                <p data-i18n="d4_text">
+                    أرست المعاهدة نظاماً دولياً يجعل أنتاركتيكا منطقة مخصصة للسلام والبحث العلمي، وتبقى أرض ماري بيرد أكبر إقليم على وجه الأرض بلا مطالبة سيادية رسمية من أي دولة.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- قسم الخريطة الرسمية -->
+    <!-- إعلان أدسنس رقم 4 -->
+    <div class="ad-slot-box">
+        <!-- 44411 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2244311957196913"
+             data-ad-slot="6720741348"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <section id="volcanoes">
+        <div class="volcano-section">
+            <div class="section-header" style="margin-bottom: 24px;">
+                <h2 data-i18n="vol_heading">براكين <span>أنتاركتيكا وأرض ماري بيرد</span> عبر التاريخ</h2>
+                <p data-i18n="vol_sub">
+                    تحت الغطاء الجليدي السميك لغرب القارة القطبية الجنوبية وأرض ماري بيرد يمتد أكبر إقليم بركاني على كوكب الأرض، مع قمم بركانية شهيرة وثورانات ذات أثر مناخي وتاريخي لافت.
+                </p>
+            </div>
+
+            <div class="volcano-grid">
+                <div class="volcano-card">
+                    <span class="volcano-badge" data-i18n="v1_tag">أعلى بركان في أنتاركتيكا • 4,285م</span>
+                    <h4 data-i18n="v1_title">جبل سيدلي (Mount Sidley)</h4>
+                    <p data-i18n="v1_text">
+                        يقع في أرض ماري بيرد ويُعد أعلى بركان في القارة القطبية الجنوبية، ويضم فوهة بركانية (كالديرا) واسعة بعرض نحو 5 كيلومترات.
+                    </p>
+                </div>
+
+                <div class="volcano-card">
+                    <span class="volcano-badge" data-i18n="v2_tag">سجل ثورانات قديمة • ~17,700 سنة</span>
+                    <h4 data-i18n="v2_title">جبل تاكاهي (Mount Takahe)</h4>
+                    <p data-i18n="v2_text">
+                        بركان درعي ضخم في أرض ماري بيرد؛ تشير الأدلة الجليدية إلى فترات نشاط بركاني قديمة ارتبطت بتغيرات مناخية وذوبان جليدي في نهاية العصر الجليدي الأخير.
+                    </p>
+                </div>
+
+                <div class="volcano-card">
+                    <span class="volcano-badge" data-i18n="v3_tag">أقصى بركان نشط جنوب الأرض</span>
+                    <h4 data-i18n="v3_title">جبل إريبوس (Mount Erebus)</h4>
+                    <p data-i18n="v3_text">
+                        يقع قرب بحر روس وجرف روس الجليدي، ويُعرف بنشاطه المستمر وببحيرة الحمم الصهارية الدائمة النادرة في بيئة قطبية شديدة البرودة.
+                    </p>
+                </div>
+
+                <div class="volcano-card">
+                    <span class="volcano-badge" data-i18n="v4_tag">حرارة جوفية وكهوف جليدية</span>
+                    <h4 data-i18n="v4_title">جبل برلين وجبل فراكس</h4>
+                    <p data-i18n="v4_text">
+                        من براكين أرض ماري بيرد التي تُظهر نشاطاً حرارياً أرضياً ينتج أبخرة دافئة تشكل أبراجاً وكهوفاً جليدية نادرة وسط الثلوج.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- إعلان أدسنس رقم 5 -->
+    <div class="ad-slot-box">
+        <!-- 44411 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2244311957196913"
+             data-ad-slot="6720741348"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <section id="polar-showcase">
+        <div class="section-header">
+            <h2 data-i18n="vid_heading">صور القطب الجنوبي <span>مع موسيقى هادئة</span></h2>
+            <p data-i18n="vid_sub">
+                تنقّل بين صور الجليد والبطاريق في القطب الجنوبي (Antarctica) مع موسيقى وتريات وبيانو درامية هادئة مبرمجة بالكود — حقوق <strong>heib12</strong>.
+            </p>
+        </div>
+
+        <div class="studio-wrapper">
+            <div class="scene-tabs">
+                <button class="scene-tab active" data-slide="0" data-i18n="sc_1">1. جبال وجليد القطب الجنوبي</button>
+                <button class="scene-tab" data-slide="1" data-i18n="sc_2">2. بطاريق أنتاركتيكا على الجليد</button>
+                <button class="scene-tab" data-slide="2" data-i18n="sc_3">3. مستعمرة بطاريق الإمبراطور</button>
+                <button class="scene-tab" data-slide="3" data-i18n="sc_4">4. مسيرة البطاريق فوق الثلوج</button>
+            </div>
+
+            <div class="cinema-screen">
+                <img
+                    id="polar-slide-img"
+                    class="polar-slide-img"
+                    src="https://images.pexels.com/photos/48178/mountains-ice-bergs-antarctica-48178.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    data-fallback="https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1600&q=80"
+                    onerror="handleImgError(this)"
+                    alt="Antarctica Polar Landscape"
+                >
+
+                <div class="cinema-hud-top">
+                    <div class="rec-badge" id="hud-scene-label">ANTARCTICA • ICE & MOUNTAINS</div>
+                    <div class="watermark-tag">heib12 • ANTARCTICA</div>
+                </div>
+
+                <div class="cinema-subtitles">
+                    <div class="subtitle-box" id="doc-subtitle">
+                        جبال وجروف جليدية في القارة القطبية الجنوبية (Antarctica) وأرض ماري بيرد.
+                    </div>
+                </div>
+
+                <div class="cinema-controls">
+                    <button class="ctrl-btn" id="btn-play-pause">⏸ إيقاف التنقل</button>
+                    <button class="ctrl-btn" id="btn-sound">🔇 تشغيل الموسيقى الهادئة</button>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="doc-progress"></div>
+                    </div>
+                    <div class="time-display" id="doc-timer">00:00 / 00:32</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- إعلان أدسنس رقم 6 -->
+    <div class="ad-slot-box">
+        <!-- 44411 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2244311957196913"
+             data-ad-slot="6720741348"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
     <section id="map">
         <div class="section-header">
             <h2 data-i18n="map_heading">الخريطة الرسمية لـ <span>Mount Byrd & Marie Byrd Land</span></h2>
@@ -628,65 +1064,123 @@
         </div>
     </section>
 
-    <!-- معرض الصور الحقيقية الموثقة من القارة القطبية الجنوبية -->
+    <!-- إعلان أدسنس رقم 7 -->
+    <div class="ad-slot-box">
+        <!-- 44411 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2244311957196913"
+             data-ad-slot="6720741348"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
     <section id="gallery">
         <div class="section-header">
-            <h2 data-i18n="gal_heading">صور موثقة من <span>القارة القطبية الجنوبية</span> (Antarctica)</h2>
-            <p data-i18n="gal_sub">لقطات حقيقية من القطب الجنوبي تُظهر بطاريق الإمبراطور وآديلي والجبال الجليدية وخريطة أقاليم أنتاركتيكا.</p>
+            <h2 data-i18n="gal_heading">صور فوتوغرافية من <span>أنتاركتيكا</span></h2>
+            <p data-i18n="gal_sub">لقطات لبطاريق القارة القطبية الجنوبية والجبال الثلجية والجروف الجليدية.</p>
         </div>
 
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Emperor_Penguin_Manchot_empereur.jpg/800px-Emperor_Penguin_Manchot_empereur.jpg" alt="Emperor Penguin in Antarctica - Snow Hill Island">
+                <img
+                    src="https://images.pexels.com/photos/86405/penguin-funny-blue-water-86405.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    data-fallback="https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?auto=format&fit=crop&w=900&q=80"
+                    onerror="handleImgError(this)"
+                    alt="بطاريق القطب الجنوبي"
+                >
                 <div class="gallery-caption">
-                    <h4 data-i18n="g1_title">بطريق الإمبراطور (Emperor Penguin)</h4>
-                    <span data-i18n="g1_sub">جزيرة سنو هيل - القارة القطبية الجنوبية</span>
+                    <h4 data-i18n="g1_title">بطاريق القارة القطبية الجنوبية</h4>
+                    <span data-i18n="g1_sub">على الجليد القطبي في أنتاركتيكا</span>
                 </div>
             </div>
 
             <div class="gallery-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg/800px-Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg" alt="Adélie penguin in Antarctica">
+                <img
+                    src="https://images.pexels.com/photos/52509/penguins-emperor-antarctic-life-52509.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    data-fallback="https://images.unsplash.com/photo-1598439210625-5067c578f3f6?auto=format&fit=crop&w=900&q=80"
+                    onerror="handleImgError(this)"
+                    alt="بطاريق الإمبراطور في أنتاركتيكا"
+                >
                 <div class="gallery-caption">
-                    <h4 data-i18n="g2_title">بطريق آديلي (Adélie Penguin)</h4>
-                    <span data-i18n="g2_sub">خليج الأمل - شبه الجزيرة القطبية الجنوبية</span>
+                    <h4 data-i18n="g2_title">بطاريق الإمبراطور (Emperor Penguins)</h4>
+                    <span data-i18n="g2_sub">مستعمرات الثلوج في القطب الجنوبي</span>
                 </div>
             </div>
 
             <div class="gallery-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Gentoo_Penguins_at_Neko_Harbour%2C_Antarctica.jpg/800px-Gentoo_Penguins_at_Neko_Harbour%2C_Antarctica.jpg" alt="Gentoo Penguins on snow in Antarctica">
+                <img
+                    src="https://images.pexels.com/photos/48178/mountains-ice-bergs-antarctica-48178.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    data-fallback="https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=900&q=80"
+                    onerror="handleImgError(this)"
+                    alt="جبال أنتاركتيكا الثلجية"
+                >
                 <div class="gallery-caption">
-                    <h4 data-i18n="g3_title">مستعمرة بطاريق الجنتو على الثلج</h4>
-                    <span data-i18n="g3_sub">ميناء نيكو - القارة القطبية الجنوبية</span>
+                    <h4 data-i18n="g3_title">القمم الثلجية والجروف الجليدية</h4>
+                    <span data-i18n="g3_sub">سلاسل جبال القارة القطبية الجنوبية</span>
                 </div>
             </div>
 
             <div class="gallery-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Antarctica_2013_Journey_to_the_Crystal_Desert_%288370623298%29.jpg/800px-Antarctica_2013_Journey_to_the_Crystal_Desert_%288370623298%29.jpg" alt="Antarctica icebergs and snow mountains">
+                <img
+                    src="https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    data-fallback="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=80"
+                    onerror="handleImgError(this)"
+                    alt="بطاريق على الثلج"
+                >
                 <div class="gallery-caption">
-                    <h4 data-i18n="g4_title">الجبال الجليدية والثلوج الأبدية</h4>
-                    <span data-i18n="g4_sub">مضيق جيرلاش - القطب الجنوبي</span>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ross_Ice_Shelf_1997.jpg/800px-Ross_Ice_Shelf_1997.jpg" alt="Ross Ice Shelf bordering Marie Byrd Land, Antarctica">
-                <div class="gallery-caption">
-                    <h4 data-i18n="g5_title">جرف روس الجليدي (Ross Ice Shelf)</h4>
-                    <span data-i18n="g5_sub">الحدود الغربية لأرض ماري بيرد - أنتاركتيكا</span>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Antarctica%2C_territorial_claims.svg/800px-Antarctica%2C_territorial_claims.svg.png" alt="Map of Antarctica showing unclaimed Marie Byrd Land">
-                <div class="gallery-caption">
-                    <h4 data-i18n="g6_title">خريطة القارة القطبية الجنوبية</h4>
-                    <span data-i18n="g6_sub">تُظهر موقع أرض ماري بيرد غير المطالب بها</span>
+                    <h4 data-i18n="g4_title">مسيرة البطاريق فوق الثلوج</h4>
+                    <span data-i18n="g4_sub">الحياة البرية في القارة البيضاء</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- التذييل وحقوق الملكية -->
+    <!-- إعلان أدسنس رقم 8 -->
+    <div class="ad-slot-box">
+        <!-- 44411 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2244311957196913"
+             data-ad-slot="6720741348"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- إعلان أدسنس رقم 9 -->
+    <div class="ad-slot-box">
+        <!-- 44411 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2244311957196913"
+             data-ad-slot="6720741348"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- إعلان أدسنس رقم 10 -->
+    <div class="ad-slot-box">
+        <!-- 44411 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2244311957196913"
+             data-ad-slot="6720741348"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
     <footer>
         <div class="footer-brand">ANTARCTICA • MARIE BYRD LAND</div>
         <p class="footer-desc" data-i18n="footer_desc">
@@ -698,495 +1192,314 @@
     </footer>
 
     <script>
-        // نظام الترجمة لـ 20 لغة عالمية
+        function handleImgError(img) {
+            const fallback = img.getAttribute('data-fallback');
+            if (fallback && img.src !== fallback) {
+                img.src = fallback;
+            }
+        }
+
+        const slideImg = document.getElementById('polar-slide-img');
+        const subtitleEl = document.getElementById('doc-subtitle');
+        const hudLabelEl = document.getElementById('hud-scene-label');
+        const progressEl = document.getElementById('doc-progress');
+        const timerEl = document.getElementById('doc-timer');
+        const playPauseBtn = document.getElementById('btn-play-pause');
+        const soundBtn = document.getElementById('btn-sound');
+        const sceneTabs = document.querySelectorAll('.scene-tab');
+
+        const polarSlides = [
+            {
+                img: "https://images.pexels.com/photos/48178/mountains-ice-bergs-antarctica-48178.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                fallback: "https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1600&q=80",
+                hud: "ANTARCTICA • ICE & MOUNTAINS",
+                sub_ar: "جبال وجروف جليدية في القارة القطبية الجنوبية (Antarctica) وأرض ماري بيرد.",
+                sub_en: "Snow peaks and glacial cliffs in Antarctica and Marie Byrd Land."
+            },
+            {
+                img: "https://images.pexels.com/photos/86405/penguin-funny-blue-water-86405.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                fallback: "https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?auto=format&fit=crop&w=1600&q=80",
+                hud: "ANTARCTICA • POLAR PENGUINS",
+                sub_ar: "بطاريق القطب الجنوبي قرب المياه والجليد القطبي في أنتاركتيكا.",
+                sub_en: "Antarctic penguins near polar ice and freezing waters."
+            },
+            {
+                img: "https://images.pexels.com/photos/52509/penguins-emperor-antarctic-life-52509.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                fallback: "https://images.unsplash.com/photo-1598439210625-5067c578f3f6?auto=format&fit=crop&w=1600&q=80",
+                hud: "ANTARCTICA • EMPEROR PENGUINS",
+                sub_ar: "مستعمرات بطاريق الإمبراطور في البيئات الثلجية القاسية للقارة البيضاء.",
+                sub_en: "Emperor penguin colonies across Antarctica's icy terrain."
+            },
+            {
+                img: "https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                fallback: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1600&q=80",
+                hud: "ANTARCTICA • MARCH ON THE SNOW",
+                sub_ar: "مسيرة البطاريق فوق الثلوج في القطب الجنوبي مع موسيقى هادئة.",
+                sub_en: "Penguins marching across the snow in Antarctica."
+            }
+        ];
+
+        let isAdvancing = true;
+        let currentSlide = 0;
+        let elapsedSeconds = 0;
+        const slideDuration = 8;
+        const totalDuration = 32;
+
+        function setSlide(index) {
+            currentSlide = ((index % polarSlides.length) + polarSlides.length) % polarSlides.length;
+            const s = polarSlides[currentSlide];
+            slideImg.style.opacity = '0.35';
+            setTimeout(() => {
+                slideImg.setAttribute('data-fallback', s.fallback);
+                slideImg.src = s.img;
+                slideImg.style.transform = (currentSlide % 2 === 0) ? 'scale(1.06)' : 'scale(1.0)';
+                slideImg.style.opacity = '1';
+            }, 160);
+
+            sceneTabs.forEach((tab, idx) => tab.classList.toggle('active', idx === currentSlide));
+            hudLabelEl.textContent = s.hud;
+            subtitleEl.textContent = (document.documentElement.lang === 'ar') ? s.sub_ar : s.sub_en;
+        }
+
+        sceneTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const idx = parseInt(tab.getAttribute('data-slide'), 10);
+                elapsedSeconds = idx * slideDuration;
+                setSlide(idx);
+            });
+        });
+
+        playPauseBtn.addEventListener('click', () => {
+            isAdvancing = !isAdvancing;
+            playPauseBtn.textContent = isAdvancing ? "⏸ إيقاف التنقل" : "▶ استئناف التنقل";
+        });
+
+        let audioCtx = null;
+        let musicPlaying = false;
+        let musicTimer = null;
+        const chords = [
+            [130.81, 155.56, 196.00, 261.63],
+            [103.83, 155.56, 207.65, 261.63],
+            [155.56, 196.00, 233.08, 311.13],
+            [98.00,  146.83, 196.00, 246.94]
+        ];
+        let chordIdx = 0;
+        let arpIdx = 0;
+
+        function playStringChord(freqs, durationSec) {
+            if (!audioCtx || !musicPlaying) return;
+            const now = audioCtx.currentTime;
+            freqs.forEach((f) => {
+                const osc = audioCtx.createOscillator();
+                const filter = audioCtx.createBiquadFilter();
+                const gain = audioCtx.createGain();
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(f, now);
+                filter.type = 'lowpass';
+                filter.frequency.setValueAtTime(520, now);
+                gain.gain.setValueAtTime(0.0001, now);
+                gain.gain.linearRampToValueAtTime(0.024, now + 1.2);
+                gain.gain.linearRampToValueAtTime(0.018, now + durationSec - 0.6);
+                gain.gain.exponentialRampToValueAtTime(0.0001, now + durationSec);
+                osc.connect(filter);
+                filter.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start(now);
+                osc.stop(now + durationSec + 0.05);
+            });
+        }
+
+        function playSoftPianoNote(freq) {
+            if (!audioCtx || !musicPlaying) return;
+            const now = audioCtx.currentTime;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(freq * 2, now);
+            gain.gain.setValueAtTime(0.0001, now);
+            gain.gain.linearRampToValueAtTime(0.04, now + 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.0001, now + 1.6);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start(now);
+            osc.stop(now + 1.7);
+        }
+
+        function startMusicLoop() {
+            if (musicTimer) clearInterval(musicTimer);
+            const triggerStep = () => {
+                if (!musicPlaying) return;
+                const currentChord = chords[chordIdx % chords.length];
+                if (arpIdx % 4 === 0) {
+                    playStringChord(currentChord, 4.2);
+                }
+                playSoftPianoNote(currentChord[arpIdx % currentChord.length]);
+                arpIdx++;
+                if (arpIdx % 4 === 0) {
+                    chordIdx++;
+                }
+            };
+            triggerStep();
+            musicTimer = setInterval(triggerStep, 1000);
+        }
+
+        soundBtn.addEventListener('click', () => {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            musicPlaying = !musicPlaying;
+            soundBtn.textContent = musicPlaying ? "🔊 إيقاف الموسيقى الهادئة" : "🔇 تشغيل الموسيقى الهادئة";
+            if (musicPlaying) {
+                startMusicLoop();
+            } else if (musicTimer) {
+                clearInterval(musicTimer);
+            }
+        });
+
+        setInterval(() => {
+            if (isAdvancing) {
+                elapsedSeconds += 1;
+                if (elapsedSeconds >= totalDuration) {
+                    elapsedSeconds = 0;
+                }
+                const nextSlide = Math.floor(elapsedSeconds / slideDuration);
+                if (nextSlide !== currentSlide) {
+                    setSlide(nextSlide);
+                }
+            }
+            const pct = (elapsedSeconds / totalDuration) * 100;
+            progressEl.style.width = `${pct}%`;
+            const mm = String(Math.floor(elapsedSeconds / 60)).padStart(2, '0');
+            const ss = String(elapsedSeconds % 60).padStart(2, '0');
+            timerEl.textContent = `${mm}:${ss} / 00:32`;
+        }, 1000);
+
         const translations = {
             ar: {
                 dir: "rtl",
-                nav_overview: "عن القارة", nav_details: "الشرح المفصل", nav_map: "الخريطة الرسمية", nav_gallery: "صور القطب الجنوبي",
+                nav_overview: "عن القارة", nav_inside: "ماذا يوجد بها؟", nav_discoveries: "اكتشافات كبرى", nav_volcanoes: "البراكين", nav_videos: "صور القطب والموسيقى", nav_map: "الخريطة", nav_gallery: "المعرض",
                 hero_tag: "البوابة الرسمية للقارة القطبية الجنوبية • Antarctica Official Portal",
                 hero_title: "أرض ماري بيرد <span>Marie Byrd Land</span>",
-                hero_desc: "القلب الجليدي البكر في غرب القارة القطبية الجنوبية (Antarctica)، وموطن جبل بيرد (Mount Byrd) والسلاسل الجبلية المغطاة بالثلوج الأبدية، وأكبر إقليم غير مطالب به على كوكب الأرض.",
-                btn_map: "استعراض الخريطة التفاعلية", btn_details: "قراءة الشرح المفصل",
-                stat_area: "المساحة الإجمالية لأرض ماري بيرد", stat_coords: "إحداثيات جبل بيرد (Mount Byrd)",
-                stat_temp: "متوسط درجات الحرارة الشتوية", stat_year: "عام الاكتشاف والتسمية الرسمية",
-                details_heading: "الشرح المفصل عن <span>أرض ماري بيرد</span> والقارة القطبية",
-                details_sub: "دليل معرفي شامل حول جغرافيا وتاريخ والوضع القانوني لأكثر مناطق القطب الجنوبي تفرداً وغموضاً.",
-                c1_title: "الموقع الجغرافي والامتداد", c1_text: "تقع أرض ماري بيرد في غرب القارة القطبية الجنوبية، وتمتد شرق جرف روس الجليدي وبحر روس وجنوب المحيط الهادئ بين خطي طول 158° غرباً و103°24' غرباً، وتضم جبل بيرد (Mount Byrd).",
-                c2_title: "الوضع القانوني الفريد (Terra Nullius)", c2_text: "تُعد أرض ماري بيرد أكبر منطقة برية غير مأهولة وغير خاضعة لسيادة أي دولة في العالم، وتخضع بالكامل لمعاهدة القارة القطبية الجنوبية للأغراض السلمية والبحث العلمي.",
-                c3_title: "التاريخ والاكتشاف", c3_text: "سُميت المنطقة عام 1929 على يد المستكشف الأدميرال الأمريكي ريتشارد إيفلين بيرد تكريماً لزوجته ماري، عقب رحلاته الاستكشافية الجوية فوق غرب أنتاركتيكا.",
-                c4_title: "التضاريس والبراكين الجليدية", c4_text: "يغطي المنطقة غطاء جليدي هائل تتخلله قمم بركانية شامخة مثل جبل سيدلي وجبل بيرد وسط العواصف الثلجية القطبية.",
-                c5_title: "الحياة الفطرية والبطاريق", c5_text: "تزخر السواحل والجروف الجليدية بمستعمرات بطريق الإمبراطور وبطريق آديلي وبطريق الجنتو، إضافة إلى الفقمات والطيور البحرية.",
-                c6_title: "الأبحاث العلمية والمناخ", c6_text: "تستقطب المنطقة بعثات علمية دولية لدراسة حركة الصفائح الجليدية في غرب أنتاركتيكا وتأثيرها على المناخ ومستوى البحار العالمي.",
+                hero_desc: "أوسع إقليم غير مطالب به على كوكب الأرض في غرب القارة القطبية الجنوبية (Antarctica)، حيث يلتقي جبل بيرد (Mount Byrd) بأكبر حزام بركاني تحت الجليد وأسرار الجغرافيا والجيولوجيا القطبية.",
+                btn_videos: "صور القطب والموسيقى", btn_inside: "ماذا يوجد في أرض ماري بيرد؟", btn_map: "الخريطة التفاعلية",
+                stat_area: "المساحة الإجمالية لأرض ماري بيرد", stat_volcanoes: "بركاناً مكتشفاً تحت الجليد", stat_ice: "أقصى سُمك للغطاء الجليدي", stat_coords: "إحداثيات جبل بيرد (Mount Byrd)",
+                inside_heading: "ماذا يوجد داخل <span>أرض ماري بيرد</span> وأنتاركتيكا؟",
+                inside_sub: "رغم أنها تبدو من الخارج مجرد صحراء جليدية بيضاء صامتة، فإن أرض ماري بيرد وغرب أنتاركتيكا تخفي عالماً كاملاً من التضاريس والبحيرات الجليدية والأنهار الجليدية السريعة.",
+                in1_badge: "تضاريس جبلية", in1_title: "سلاسل جبال فورد وإكزكيوتيف كوميتي", in1_text: "تضم نتوءات صخرية وقمماً جبلية مثل جبل بيرد (Mount Byrd) في جبال فورد وسلسلة إكزكيوتيف كوميتي البركانية.",
+                in2_badge: "أنهار جليدية عملاقة", in2_title: "نهر ثويتس ونهر باين آيلاند الجليديان", in2_text: "تتدفق أنهار جليدية هائلة من غرب أنتاركتيكا نحو بحر أموندسن وبحر روس وتخضع لمراقبة علمية مستمرة.",
+                in3_badge: "مياه تحت الجليد", in3_title: "بحيرات ومجاري مائية تحت الصفيحة الجليدية", in3_text: "تتشكل شبكات مائية وبحيرات تحت الجليد بفعل الضغط والحرارة الجوفية وتوفر بيئة لدراسة الحياة الدقيقة.",
+                in4_badge: "سجل مناخي قديم", in4_title: "أرشيف مناخي يمتد لمئات الآلاف من السنين", in4_text: "تختزن طبقات الجليد فقاعات هواء قديمة ورماداً بركانياً يوثق تاريخ مناخ الأرض عبر العصور.",
+                disc_heading: "أبرز <span>الاكتشافات العلمية والتاريخية</span> في المنطقة",
+                disc_sub: "محطات كبرى غيّرت فهم البشرية لقارة أنتاركتيكا وأرض ماري بيرد وجبل بيرد.",
+                d1_title: "اكتشاف 138 بركاناً تحت الجليد", d1_text: "كشفت دراسات جيوفيزيائية عن وجود نحو 138 بركاناً في نظام الصدع الغربي لأنتاركتيكا وأرض ماري بيرد.",
+                d2_title: "الاستكشاف الجوي وعملية هاي جمب", d2_text: "من رحلات ريتشارد بيرد عام 1929 إلى بعثات المسح الجوي الكبرى مثل عملية هاي جمب لتوثيق التضاريس القطبية.",
+                d3_title: "رسم تضاريس الصخر الأساسي", d3_text: "ساعدت قياسات الرادار والجاذبية في رسم خرائط لما تحت الغطاء الجليدي وتحديد عمق الصخور الأساسية.",
+                d4_title: "معاهدة القارة القطبية الجنوبية (1959)", d4_text: "تكرّس المعاهدة القارة للبحث العلمي السلمي، وتبقى أرض ماري بيرد أكبر إقليم بلا مطالبة سيادية رسمية.",
+                vol_heading: "براكين <span>أنتاركتيكا وأرض ماري بيرد</span> عبر التاريخ",
+                vol_sub: "تحت الغطاء الجليدي السميك لغرب القارة القطبية الجنوبية وأرض ماري بيرد يمتد أكبر إقليم بركاني على كوكب الأرض.",
+                v1_tag: "أعلى بركان في أنتاركتيكا • 4,285م", v1_title: "جبل سيدلي (Mount Sidley)", v1_text: "يقع في أرض ماري بيرد ويُعد أعلى بركان في القارة القطبية الجنوبية بفوهة واسعة قطرها نحو 5 كم.",
+                v2_tag: "سجل ثورانات قديمة • ~17,700 سنة", v2_title: "جبل تاكاهي (Mount Takahe)", v2_text: "بركان درعي في أرض ماري بيرد ارتبطت فترات نشاطه القديمة بتغيرات مناخية وذوبان جليدي تاريخي.",
+                v3_tag: "أقصى بركان نشط جنوب الأرض", v3_title: "جبل إريبوس (Mount Erebus)", v3_text: "يقع قرب بحر روس ويُعرف بنشاطه المستمر وببحيرة الحمم الصهارية الدائمة النادرة.",
+                v4_tag: "حرارة جوفية وكهوف جليدية", v4_title: "جبل برلين وجبل فراكس", v4_text: "براكين في أرض ماري بيرد تُظهر نشاطاً حرارياً أرضياً يشكل أبراجاً وكهوفاً جليدية وسط الثلوج.",
+                vid_heading: "صور القطب الجنوبي <span>مع موسيقى هادئة</span>",
+                vid_sub: "تنقّل بين صور الجليد والبطاريق في القطب الجنوبي (Antarctica) مع موسيقى وتريات وبيانو درامية هادئة مبرمجة بالكود — حقوق heib12.",
+                sc_1: "1. جبال وجليد القطب الجنوبي", sc_2: "2. بطاريق أنتاركتيكا على الجليد", sc_3: "3. مستعمرة بطاريق الإمبراطور", sc_4: "4. مسيرة البطاريق فوق الثلوج",
                 map_heading: "الخريطة الرسمية لـ <span>Mount Byrd & Marie Byrd Land</span>",
                 map_sub: "استكشف الموقع الجغرافي الدقيق لجبل بيرد وأرض ماري بيرد في القارة القطبية الجنوبية مباشرة عبر الخريطة التفاعلية.",
                 map_loc_label: "الموقع المحدد:", map_open_btn: "فتح في خرائط Google ↗",
-                gal_heading: "صور موثقة من <span>القارة القطبية الجنوبية</span> (Antarctica)",
-                gal_sub: "لقطات حقيقية من القطب الجنوبي تُظهر بطاريق الإمبراطور وآديلي والجبال الجليدية وخريطة أقاليم أنتاركتيكا.",
-                g1_title: "بطريق الإمبراطور (Emperor Penguin)", g1_sub: "جزيرة سنو هيل - القارة القطبية الجنوبية",
-                g2_title: "بطريق آديلي (Adélie Penguin)", g2_sub: "خليج الأمل - شبه الجزيرة القطبية الجنوبية",
-                g3_title: "مستعمرة بطاريق الجنتو على الثلج", g3_sub: "ميناء نيكو - القارة القطبية الجنوبية",
-                g4_title: "الجبال الجليدية والثلوج الأبدية", g4_sub: "مضيق جيرلاش - القطب الجنوبي",
-                g5_title: "جرف روس الجليدي (Ross Ice Shelf)", g5_sub: "الحدود الغربية لأرض ماري بيرد - أنتاركتيكا",
-                g6_title: "خريطة القارة القطبية الجنوبية", g6_sub: "تُظهر موقع أرض ماري بيرد غير المطالب بها",
+                gal_heading: "صور فوتوغرافية من <span>أنتاركتيكا</span>",
+                gal_sub: "لقطات لبطاريق القارة القطبية الجنوبية والجبال الثلجية والجروف الجليدية.",
+                g1_title: "بطاريق القارة القطبية الجنوبية", g1_sub: "على الجليد القطبي في أنتاركتيكا",
+                g2_title: "بطاريق الإمبراطور (Emperor Penguins)", g2_sub: "مستعمرات الثلوج في القطب الجنوبي",
+                g3_title: "القمم الثلجية والجروف الجليدية", g3_sub: "سلاسل جبال القارة القطبية الجنوبية",
+                g4_title: "مسيرة البطاريق فوق الثلوج", g4_sub: "الحياة البرية في القارة البيضاء",
                 footer_desc: "البوابة التعريفية والجغرافية الرئيسية للقارة القطبية الجنوبية وأرض ماري بيرد وجبل بيرد.",
                 rights: "جميع الحقوق محفوظة"
             },
             en: {
                 dir: "ltr",
-                nav_overview: "Overview", nav_details: "Detailed Guide", nav_map: "Official Map", nav_gallery: "Antarctica Gallery",
+                nav_overview: "Overview", nav_inside: "What's Inside?", nav_discoveries: "Discoveries", nav_volcanoes: "Volcanoes", nav_videos: "Polar Photos & Music", nav_map: "Map", nav_gallery: "Gallery",
                 hero_tag: "Official Portal of Antarctica • Marie Byrd Land",
                 hero_title: "Marie Byrd Land <span>Antarctica</span>",
-                hero_desc: "The pristine icy heart of West Antarctica, home to Mount Byrd, snow-covered volcanic ranges, and the largest unclaimed territory on Earth.",
-                btn_map: "Explore Interactive Map", btn_details: "Read Detailed Guide",
-                stat_area: "Total Area of Marie Byrd Land", stat_coords: "Mount Byrd Coordinates",
-                stat_temp: "Average Winter Temperature", stat_year: "Year Discovered & Named",
-                details_heading: "Detailed Guide to <span>Marie Byrd Land</span> & Antarctica",
-                details_sub: "A comprehensive overview of the geography, history, and unique legal status of West Antarctica.",
-                c1_title: "Geography & Location", c1_text: "Located in West Antarctica east of the Ross Ice Shelf and Ross Sea, stretching between 158°W and 103°24'W, home to Mount Byrd in the Ford Ranges.",
-                c2_title: "Unique Legal Status (Terra Nullius)", c2_text: "Marie Byrd Land is the largest unclaimed territory on Earth, governed peacefully under the 1959 Antarctic Treaty exclusively for scientific research.",
-                c3_title: "History & Discovery", c3_text: "Named in 1929 by American explorer Rear Admiral Richard E. Byrd after his wife Marie following pioneering aerial expeditions over West Antarctica.",
-                c4_title: "Glacial Terrain & Volcanoes", c4_text: "Covered by the massive West Antarctic Ice Sheet, pierced by volcanic peaks including Mount Sidley and Mount Byrd.",
-                c5_title: "Antarctic Wildlife & Penguins", c5_text: "Surrounding ice shelves and coasts host colonies of Emperor, Adélie, and Gentoo penguins alongside seals and seabirds.",
-                c6_title: "Climate & Scientific Research", c6_text: "International expeditions monitor West Antarctic ice sheet dynamics and global sea-level impacts.",
+                hero_desc: "The largest unclaimed territory on Earth in West Antarctica, where Mount Byrd meets the largest subglacial volcanic province and polar geological discoveries.",
+                btn_videos: "Polar Photos & Music", btn_inside: "What's Inside Marie Byrd Land?", btn_map: "Interactive Map",
+                stat_area: "Total Area of Marie Byrd Land", stat_volcanoes: "Subglacial Volcanoes", stat_ice: "Max Ice Sheet Thickness", stat_coords: "Mount Byrd Coordinates",
+                inside_heading: "What Is Inside <span>Marie Byrd Land</span> & Antarctica?",
+                inside_sub: "Beyond the white polar surface lies a complex world of mountain ranges, fast ice streams, subglacial lakes, and ancient climate records.",
+                in1_badge: "Mountain Terrain", in1_title: "Ford Ranges & Executive Committee Range", in1_text: "Features rock outcrops and peaks including Mount Byrd in the Ford Ranges and volcanic peaks across Marie Byrd Land.",
+                in2_badge: "Giant Ice Streams", in2_title: "Thwaites & Pine Island Glaciers", in2_text: "Massive ice streams drain West Antarctica toward the Amundsen and Ross seas and are closely monitored by glaciologists.",
+                in3_badge: "Subglacial Water", in3_title: "Subglacial Lakes & Meltwater Networks", in3_text: "Pressure and geothermal heat create subglacial water pathways and lakes that offer insight into extreme ecosystems.",
+                in4_badge: "Climate Archive", in4_title: "Deep Ice Core Climate Record", in4_text: "Layers of compacted snow and ice preserve ancient air bubbles and volcanic ash recording Earth's climate history.",
+                disc_heading: "Major <span>Scientific & Historical Discoveries</span>",
+                disc_sub: "Key milestones that shaped modern understanding of West Antarctica, Marie Byrd Land, and Mount Byrd.",
+                d1_title: "138 Subglacial Volcanoes Identified", d1_text: "Radar and satellite studies identified around 138 volcanoes along the West Antarctic rift system and Marie Byrd Land.",
+                d2_title: "Aerial Exploration & Operation Highjump", d2_text: "From Richard Byrd's 1929 flights to large-scale aerial mapping expeditions like Operation Highjump, vast uncharted regions were surveyed.",
+                d3_title: "Mapping the Subglacial Bedrock", d3_text: "Ice-penetrating radar and gravity data mapped the bedrock beneath thick Antarctic ice sheets.",
+                d4_title: "The 1959 Antarctic Treaty", d4_text: "Dedicates Antarctica to peaceful science, leaving Marie Byrd Land as the largest territory without a formal sovereign claim.",
+                vol_heading: "Volcanoes of <span>Antarctica & Marie Byrd Land</span>",
+                vol_sub: "Beneath West Antarctica's ice sheet lies one of Earth's most prominent volcanic provinces.",
+                v1_tag: "Highest Antarctic Volcano • 4,285m", v1_title: "Mount Sidley", v1_text: "Located in Marie Byrd Land, the highest volcano in Antarctica with a roughly 5-km wide caldera.",
+                v2_tag: "Ancient Eruptive Record • ~17,700 yrs", v2_title: "Mount Takahe", v2_text: "A major shield volcano in Marie Byrd Land linked in ice core studies to past climate shifts and deglaciation.",
+                v3_tag: "Southernmost Active Volcano", v3_title: "Mount Erebus", v3_text: "Located near the Ross Sea, well known for ongoing volcanic activity and a persistent lava lake.",
+                v4_tag: "Geothermal Heat & Ice Caves", v4_title: "Mount Berlin & Mount Frakes", v4_text: "Marie Byrd Land volcanoes with geothermal heat that forms steam vents and ice towers.",
+                vid_heading: "Antarctica Photos <span>with Calm Music</span>",
+                vid_sub: "Explore Antarctica ice and penguin photos accompanied by calm coded strings & piano music — copyright heib12.",
+                sc_1: "1. Antarctic Ice & Peaks", sc_2: "2. Polar Penguins", sc_3: "3. Emperor Penguins", sc_4: "4. Marching on Snow",
                 map_heading: "Official Map of <span>Mount Byrd & Marie Byrd Land</span>",
                 map_sub: "Explore the exact coordinates of Mount Byrd in Marie Byrd Land, Antarctica.",
                 map_loc_label: "Selected Location:", map_open_btn: "Open in Google Maps ↗",
-                gal_heading: "Verified Photos of <span>Antarctica</span>",
-                gal_sub: "Authentic photographs from Antarctica showcasing Emperor & Adélie penguins, icebergs, and territorial maps.",
-                g1_title: "Emperor Penguin", g1_sub: "Snow Hill Island, Antarctica",
-                g2_title: "Adélie Penguin", g2_sub: "Hope Bay, Antarctic Peninsula",
-                g3_title: "Gentoo Penguins on Snow", g3_sub: "Neko Harbour, Antarctica",
-                g4_title: "Antarctic Icebergs & Snow Peaks", g4_sub: "Gerlache Strait, Antarctica",
-                g5_title: "Ross Ice Shelf", g5_sub: "Western Border of Marie Byrd Land, Antarctica",
-                g6_title: "Map of Antarctica", g6_sub: "Showing unclaimed Marie Byrd Land",
+                gal_heading: "Photographs of <span>Antarctica</span>",
+                gal_sub: "Antarctic penguins, snow peaks, and ice cliffs.",
+                g1_title: "Antarctic Penguins", g1_sub: "On polar ice in Antarctica",
+                g2_title: "Emperor Penguins", g2_sub: "Snow colonies in Antarctica",
+                g3_title: "Snow Peaks & Ice Cliffs", g3_sub: "Mountain ranges of Antarctica",
+                g4_title: "Penguins Marching on Snow", g4_sub: "Wildlife of the White Continent",
                 footer_desc: "The main geographic and informational portal for Antarctica, Marie Byrd Land, and Mount Byrd.",
                 rights: "All Rights Reserved"
-            },
-            ru: {
-                dir: "ltr",
-                nav_overview: "Обзор", nav_details: "Подробно", nav_map: "Карта", nav_gallery: "Галерея Антарктиды",
-                hero_tag: "Официальный портал Антарктиды • Земля Мэри Бэрд",
-                hero_title: "Земля Мэри Бэрд <span>Marie Byrd Land</span>",
-                hero_desc: "Нетронутое ледяное сердце Западной Антарктиды, место расположения горы Бэрд (Mount Byrd) и крупнейшая ничейная территория на Земле.",
-                btn_map: "Открыть карту", btn_details: "Читать описание",
-                stat_area: "Общая площадь Земли Мэри Бэрд", stat_coords: "Координаты горы Бэрд",
-                stat_temp: "Средняя зимняя температура", stat_year: "Год открытия и названия",
-                details_heading: "Подробно о <span>Земле Мэри Бэрд</span> и Антарктиде",
-                details_sub: "Полный обзор географии, истории и уникального правового статуса Западной Антарктиды.",
-                c1_title: "География и расположение", c1_text: "Расположена в Западной Антарктиде к востоку от шельфового ледника Росса между 158° з.д. и 103°24' з.д., включает гору Бэрд.",
-                c2_title: "Правовой статус (Terra Nullius)", c2_text: "Крупнейшая территория на Земле, на которую не претендует ни одно государство; регулируется Договором об Антарктике 1959 года.",
-                c3_title: "История открытия", c3_text: "Названа в 1929 году американским исследователем контр-адмиралом Ричардом Бэрдом в честь его жены Мэри.",
-                c4_title: "Рельеф и вулканы", c4_text: "Покрыта мощным Западно-Антарктическим ледяным щитом с вулканическими вершинами, включая гору Сидли и гору Бэрд.",
-                c5_title: "Пингвины и природа", c5_text: "На побережьях обитают колонии императорских пингвинов, пингвинов Адели и субантарктических пингвинов.",
-                c6_title: "Научные исследования", c6_text: "Международные экспедиции изучают ледники Западной Антарктиды и их влияние на мировой климат.",
-                map_heading: "Официальная карта <span>Mount Byrd & Marie Byrd Land</span>",
-                map_sub: "Точные координаты горы Бэрд и Земли Мэри Бэрд в Антарктиде.",
-                map_loc_label: "Локация:", map_open_btn: "Открыть в Google Картах ↗",
-                gal_heading: "Подлинные фото <span>Антарктиды</span>",
-                gal_sub: "Реальные снимки пингвинов, айсбергов, шельфового ледника Росса и карты Антарктиды.",
-                g1_title: "Императорский пингвин", g1_sub: "Остров Сноу-Хилл, Антарктида",
-                g2_title: "Пингвин Адели", g2_sub: "Залив Надежды, Антарктида",
-                g3_title: "Субантарктические пингвины", g3_sub: "Бухта Неко, Антарктида",
-                g4_title: "Айсберги и снежные горы", g4_sub: "Пролив Жерлаш, Антарктида",
-                g5_title: "Шельфовый ледник Росса", g5_sub: "Граница Земли Мэри Бэрд, Антарктида",
-                g6_title: "Карта Антарктиды", g6_sub: "Сектор Земли Мэри Бэрд",
-                footer_desc: "Главный информационный и географический портал Антарктиды и Земли Мэри Бэрд.",
-                rights: "Все права защищены"
-            },
-            fr: {
-                dir: "ltr", nav_overview: "Aperçu", nav_details: "Guide détaillé", nav_map: "Carte officielle", nav_gallery: "Galerie Antarctique",
-                hero_tag: "Portail Officiel de l'Antarctique • Terre Marie Byrd", hero_title: "Terre Marie Byrd <span>Antarctica</span>",
-                hero_desc: "Le cœur glacé de l'Antarctique occidental, abritant le mont Byrd et le plus grand territoire non revendiqué de la planète.",
-                btn_map: "Voir la carte", btn_details: "Lire le guide", stat_area: "Superficie totale", stat_coords: "Coordonnées du mont Byrd",
-                stat_temp: "Température hivernale moyenne", stat_year: "Année de découverte",
-                details_heading: "Guide détaillé sur la <span>Terre Marie Byrd</span>", details_sub: "Géographie, histoire et statut juridique unique en Antarctique.",
-                c1_title: "Géographie", c1_text: "Située en Antarctique occidental à l'est de la barrière de Ross, abritant le mont Byrd.",
-                c2_title: "Statut juridique", c2_text: "Plus grand territoire sans revendication nationale, protégé par le Traité sur l'Antarctique de 1959.",
-                c3_title: "Histoire", c3_text: "Nommée en 1929 par l'explorateur Richard E. Byrd en l'honneur de son épouse Marie.",
-                c4_title: "Relief glaciaire", c4_text: "Recouverte par l'inlandsis ouest-antarctique et ponctuée de sommets volcaniques.",
-                c5_title: "Faune et manchots", c5_text: "Colonies de manchots empereurs, Adélie et papous sur les côtes glacées.",
-                c6_title: "Recherche scientifique", c6_text: "Étude des calottes glaciaires et du climat polaire.",
-                map_heading: "Carte officielle de <span>Mount Byrd & Marie Byrd Land</span>", map_sub: "Coordonnées exactes du mont Byrd en Antarctique.",
-                map_loc_label: "Lieu :", map_open_btn: "Ouvrir dans Google Maps ↗",
-                gal_heading: "Photos authentiques de <span>l'Antarctique</span>", gal_sub: "Manchots, icebergs et carte officielle de l'Antarctique.",
-                g1_title: "Manchot empereur", g1_sub: "Île Snow Hill, Antarctique", g2_title: "Manchot Adélie", g2_sub: "Baie de l'Espoir, Antarctique",
-                g3_title: "Manchots papous", g3_sub: "Port Neko, Antarctique", g4_title: "Icebergs et montagnes", g4_sub: "Détroit de Gerlache, Antarctique",
-                g5_title: "Barrière de Ross", g5_sub: "Bordure ouest de la Terre Marie Byrd", g6_title: "Carte de l'Antarctique", g6_sub: "Terre Marie Byrd non revendiquée",
-                footer_desc: "Portail officiel de l'Antarctique et de la Terre Marie Byrd.", rights: "Tous droits réservés"
-            },
-            es: {
-                dir: "ltr", nav_overview: "Inicio", nav_details: "Guía detallada", nav_map: "Mapa oficial", nav_gallery: "Galería Antártica",
-                hero_tag: "Portal Oficial de la Antártida • Tierra de Marie Byrd", hero_title: "Tierra de Marie Byrd <span>Antarctica</span>",
-                hero_desc: "El corazón helado de la Antártida Occidental, hogar del Monte Byrd y el territorio no reclamado más grande del planeta.",
-                btn_map: "Ver mapa interactivo", btn_details: "Leer guía detallada", stat_area: "Área total", stat_coords: "Coordenadas del Monte Byrd",
-                stat_temp: "Temperatura media invernal", stat_year: "Año de descubrimiento",
-                details_heading: "Guía detallada de la <span>Tierra de Marie Byrd</span>", details_sub: "Geografía, historia y estatus legal único en la Antártida.",
-                c1_title: "Ubicación geográfica", c1_text: "Ubicada en la Antártida Occidental al este de la barrera de hielo de Ross, donde se alza el Monte Byrd.",
-                c2_title: "Estatus legal único", c2_text: "Mayor territorio sin soberanía nacional, protegido por el Tratado Antártico de 1959 para la ciencia.",
-                c3_title: "Historia y descubrimiento", c3_text: "Nombrada en 1929 por el explorador Richard E. Byrd en honor a su esposa Marie.",
-                c4_title: "Relieve y volcanes", c4_text: "Cubierta por una inmensa capa de hielo y picos volcánicos como el Monte Sidley y el Monte Byrd.",
-                c5_title: "Pingüinos y fauna", c5_text: "Colonias de pingüinos emperador, Adelia y papúa en las costas antárticas.",
-                c6_title: "Investigación científica", c6_text: "Expediciones internacionales estudian el hielo antártico y el clima global.",
-                map_heading: "Mapa oficial de <span>Mount Byrd & Marie Byrd Land</span>", map_sub: "Coordenadas exactas del Monte Byrd en la Antártida.",
-                map_loc_label: "Ubicación:", map_open_btn: "Abrir en Google Maps ↗",
-                gal_heading: "Fotos verificadas de la <span>Antártida</span>", gal_sub: "Pingüinos, icebergs y mapa territorial de la Antártida.",
-                g1_title: "Pingüino emperador", g1_sub: "Isla Snow Hill, Antártida", g2_title: "Pingüino de Adelia", g2_sub: "Bahía Esperanza, Antártida",
-                g3_title: "Pingüinos papúa en la nieve", g3_sub: "Puerto Neko, Antártida", g4_title: "Icebergs y montañas nevadas", g4_sub: "Estrecho de Gerlache, Antártida",
-                g5_title: "Barrera de hielo de Ross", g5_sub: "Borde occidental de Marie Byrd Land", g6_title: "Mapa de la Antártida", g6_sub: "Tierra de Marie Byrd",
-                footer_desc: "Portal principal de la Antártida, Tierra de Marie Byrd y Monte Byrd.", rights: "Todos los derechos reservados"
-            },
-            de: {
-                dir: "ltr", nav_overview: "Übersicht", nav_details: "Details", nav_map: "Offizielle Karte", nav_gallery: "Antarktis-Galerie",
-                hero_tag: "Offizielles Portal der Antarktis • Marie-Byrd-Land", hero_title: "Marie-Byrd-Land <span>Antarctica</span>",
-                hero_desc: "Das unberührte eisige Herz der Westantarktis, Heimat des Mount Byrd und das größte unbeanspruchte Gebiet der Erde.",
-                btn_map: "Interaktive Karte", btn_details: "Details lesen", stat_area: "Gesamtfläche", stat_coords: "Mount Byrd Koordinaten",
-                stat_temp: "Durchschnittliche Wintertemperatur", stat_year: "Entdeckungsjahr",
-                details_heading: "Ausführlicher Leitfaden über <span>Marie-Byrd-Land</span>", details_sub: "Geographie, Geschichte und Rechtsstatus in der Antarktis.",
-                c1_title: "Geographie", c1_text: "Liegt in der Westantarktis östlich des Ross-Schelfeises und umfasst den Mount Byrd.",
-                c2_title: "Rechtsstatus", c2_text: "Größtes keinem Staat zugeordnetes Gebiet der Erde, geschützt durch den Antarktisvertrag.",
-                c3_title: "Geschichte", c3_text: "1929 von Admiral Richard E. Byrd nach seiner Frau Marie benannt.",
-                c4_title: "Eis & Vulkane", c4_text: "Bedeckt vom Westantarktischen Eisschild mit Vulkanen wie Mount Sidley und Mount Byrd.",
-                c5_title: "Pinguine & Tierwelt", c5_text: "Kaiserpinguine, Adeliepinguine und Eselspinguine an den Küsten der Antarktis.",
-                c6_title: "Forschung", c6_text: "Internationale Klimaforschung am westantarktischen Eisschild.",
-                map_heading: "Offizielle Karte von <span>Mount Byrd & Marie Byrd Land</span>", map_sub: "Exakte Koordinaten des Mount Byrd in der Antarktis.",
-                map_loc_label: "Standort:", map_open_btn: "In Google Maps öffnen ↗",
-                gal_heading: "Echte Fotos aus der <span>Antarktis</span>", gal_sub: "Pinguine, Eisberge und Karte der Antarktis.",
-                g1_title: "Kaiserpinguin", g1_sub: "Snow-Hill-Insel, Antarktis", g2_title: "Adeliepinguin", g2_sub: "Hope Bay, Antarktis",
-                g3_title: "Eselspinguine im Schnee", g3_sub: "Neko Harbour, Antarktis", g4_title: "Eisberge und Schneeberge", g4_sub: "Gerlache-Straße, Antarktis",
-                g5_title: "Ross-Schelfeis", g5_sub: "Westgrenze von Marie-Byrd-Land", g6_title: "Karte der Antarktis", g6_sub: "Marie-Byrd-Land",
-                footer_desc: "Offizielles Informationsportal für die Antarktis und Marie-Byrd-Land.", rights: "Alle Rechte vorbehalten"
-            },
-            zh: {
-                dir: "ltr", nav_overview: "概况", nav_details: "详细介绍", nav_map: "官方地图", nav_gallery: "南极图库",
-                hero_tag: "南极洲官方门户网站 • 玛丽·伯德地", hero_title: "玛丽·伯德地 <span>Marie Byrd Land</span>",
-                hero_desc: "西南极洲纯净的冰雪心脏，伯德山（Mount Byrd）所在地，也是地球上面积最大的无主领土。",
-                btn_map: "查看交互式地图", btn_details: "阅读详细介绍", stat_area: "总面积", stat_coords: "伯德山坐标",
-                stat_temp: "冬季平均气温", stat_year: "发现与命名年份",
-                details_heading: "<span>玛丽·伯德地</span>与南极洲详细介绍", details_sub: "全面了解西南极洲的地理、历史与独特法律地位。",
-                c1_title: "地理位置", c1_text: "位于西南极洲罗斯冰架以东，涵盖福特山脉的伯德山（Mount Byrd）。",
-                c2_title: "独特法律地位", c2_text: "地球上最大的无主地，受1959年《南极条约》保护，仅用于和平科学研究。",
-                c3_title: "历史发现", c3_text: "1929年由美国探险家理查德·伯德海军少将以其妻子玛丽的名字命名。",
-                c4_title: "冰川与火山", c4_text: "被厚重的西南极冰盖覆盖，矗立着西德利山和伯德山等火山峰。",
-                c5_title: "南极企鹅与生态", c5_text: "周边海岸栖息着帝企鹅、阿德利企鹅和巴布亚企鹅群落。",
-                c6_title: "科学研究", c6_text: "国际科考队在此监测西南极冰盖变化与全球气候。",
-                map_heading: "<span>Mount Byrd & Marie Byrd Land</span> 官方地图", map_sub: "在地图上查看南极洲伯德山与玛丽·伯德地的精确位置。",
-                map_loc_label: "选定位置：", map_open_btn: "在 Google 地图中打开 ↗",
-                gal_heading: "<span>南极洲</span>真实实拍图库", gal_sub: "展示南极帝企鹅、阿德利企鹅、冰山与南极领土分布图。",
-                g1_title: "帝企鹅 (Emperor Penguin)", g1_sub: "南极洲雪丘岛", g2_title: "阿德利企鹅 (Adélie Penguin)", g2_sub: "南极半岛希望湾",
-                g3_title: "雪地上的巴布亚企鹅", g3_sub: "南极洲尼科港", g4_title: "南极冰山与雪峰", g4_sub: "南极洲杰拉许海峡",
-                g5_title: "罗斯冰架 (Ross Ice Shelf)", g5_sub: "玛丽·伯德地西界", g6_title: "南极洲地图", g6_sub: "显示未受声索的玛丽·伯德地",
-                footer_desc: "南极洲、玛丽·伯德地及伯德山官方地理信息门户。", rights: "版权所有"
-            },
-            ja: {
-                dir: "ltr", nav_overview: "概要", nav_details: "詳細解説", nav_map: "公式マップ", nav_gallery: "南極ギャラリー",
-                hero_tag: "南極大陸公式ポータル • マリーバードランド", hero_title: "マリーバードランド <span>Marie Byrd Land</span>",
-                hero_desc: "西南極の白銀の中心地。バード山（Mount Byrd）を擁し、地球上で最大の無主地として知られる地域です。",
-                btn_map: "地図を見る", btn_details: "詳細を読む", stat_area: "総面積", stat_coords: "バード山の座標",
-                stat_temp: "冬季平均気温", stat_year: "発見・命名年",
-                details_heading: "<span>マリーバードランド</span>と南極大陸の詳細", details_sub: "西南極の地理・歴史・法的地位に関する総合ガイド。",
-                c1_title: "地理と位置", c1_text: "ロス棚氷の東側に広がる西南極の広大な地域で、バード山が位置しています。",
-                c2_title: "法的地位", c2_text: "どの国も領有権を主張していない最大の地域であり、南極条約により平和的科学調査のみに利用されます。",
-                c3_title: "歴史と発見", c3_text: "1929年、アメリカの探検家リチャード・バード少将が妻マリーにちなんで命名しました。",
-                c4_title: "氷床と火山", c4_text: "厚い西南極氷床に覆われ、シドリー山やバード山などの火山がそびえます。",
-                c5_title: "ペンギンと野生生物", c5_text: "コウテイペンギンやアデリーペンギン、ジェンツーペンギンが生息しています。",
-                c6_title: "科学調査", c6_text: "世界中の研究者が氷床の変動と地球環境を観測しています。",
-                map_heading: "<span>Mount Byrd & Marie Byrd Land</span> 公式地図", map_sub: "南極大陸バード山の正確な位置を確認できます。",
-                map_loc_label: "場所:", map_open_btn: "Google マップで開く ↗",
-                gal_heading: "<span>南極大陸</span>の公式写真", gal_sub: "ペンギン、氷山、ロス棚氷、南極地図の実写ギャラリー。",
-                g1_title: "コウテイペンギン", g1_sub: "スノーヒル島・南極", g2_title: "アデリーペンギン", g2_sub: "ホープ湾・南極半島",
-                g3_title: "雪上のジェンツーペンギン", g3_sub: "ネコハーバー・南極", g4_title: "南極の氷山と雪山", g4_sub: "ジェルラッシュ海峡・南極",
-                g5_title: "ロス棚氷", g5_sub: "マリーバードランド西端", g6_title: "南極大陸地図", g6_sub: "マリーバードランドの位置",
-                footer_desc: "南極大陸・マリーバードランド・バード山の公式情報ポータル。", rights: "無断転載禁止"
-            },
-            ko: {
-                dir: "ltr", nav_overview: "개요", nav_details: "상세 설명", nav_map: "공식 지도", nav_gallery: "남극 갤러리",
-                hero_tag: "남극 대륙 공식 포털 • 마리버드랜드", hero_title: "마리버드랜드 <span>Marie Byrd Land</span>",
-                hero_desc: "서남극의 순수한 얼음 심장부이자 버드산(Mount Byrd)이 위치한 지구상 최대의 미영유 영토입니다.",
-                btn_map: "지도 보기", btn_details: "상세 설명 읽기", stat_area: "총 면적", stat_coords: "버드산 좌표",
-                stat_temp: "겨울 평균 기온", stat_year: "발견 및 명명 연도",
-                details_heading: "<span>마리버드랜드</span> 및 남극 상세 안내", details_sub: "서남극의 지리, 역사 및 법적 지위에 대한 종합 가이드.",
-                c1_title: "지리적 위치", c1_text: "로스 빙붕 동쪽 서남극에 위치하며 포드 산맥의 버드산(Mount Byrd)을 포함합니다.",
-                c2_title: "독특한 법적 지위", c2_text: "어느 국가도 영유권을 주장하지 않은 최대 지역으로 남극 조약에 따라 과학 연구 목적으로만 보호됩니다.",
-                c3_title: "역사와 발견", c3_text: "1929년 미국 탐험가 리처드 버드 제독이 아내 마리의 이름을 따서 명명했습니다.",
-                c4_title: "빙상과 화산", c4_text: "거대한 서남극 빙상으로 덮여 있으며 시들리산과 버드산 등이 솟아 있습니다.",
-                c5_title: "펭귄과 야생동물", c5_text: "황제펭귄, 아델리펭귄, 젠투펭귄 군락이 서식합니다.",
-                c6_title: "과학 연구", c6_text: "국제 연구진이 서남극 빙하 변화와 기후를 연구합니다.",
-                map_heading: "<span>Mount Byrd & Marie Byrd Land</span> 공식 지도", map_sub: "남극 버드산과 마리버드랜드의 정확한 좌표를 확인하세요.",
-                map_loc_label: "위치:", map_open_btn: "Google 지도에서 열기 ↗",
-                gal_heading: "<span>남극 대륙</span> 실제 사진", gal_sub: "황제펭귄, 아델리펭귄, 빙산 및 남극 지도 갤러리.",
-                g1_title: "황제펭귄", g1_sub: "스노힐섬 - 남극", g2_title: "아델리펭귄", g2_sub: "호프베이 - 남극 반도",
-                g3_title: "눈 위의 젠투펭귄", g3_sub: "네코 항구 - 남극", g4_title: "남극 빙산과 설산", g4_sub: "제를라슈 해협 - 남극",
-                g5_title: "로스 빙붕", g5_sub: "마리버드랜드 서쪽 경계", g6_title: "남극 대륙 지도", g6_sub: "마리버드랜드 위치 표시",
-                footer_desc: "남극 대륙, 마리버드랜드 및 버드산 공식 정보 포털.", rights: "모든 권리 보유"
-            },
-            tr: {
-                dir: "ltr", nav_overview: "Genel Bakış", nav_details: "Detaylı Rehber", nav_map: "Resmi Harita", nav_gallery: "Antarktika Galerisi",
-                hero_tag: "Antarktika Resmi Portalı • Marie Byrd Toprakları", hero_title: "Marie Byrd Land <span>Antarctica</span>",
-                hero_desc: "Batı Antarktika'nın el değmemiş buz kalbi, Byrd Dağı'nın (Mount Byrd) evi ve Dünya üzerindeki sahipsiz en büyük toprak parçası.",
-                btn_map: "Haritayı İncele", btn_details: "Detayları Oku", stat_area: "Toplam Yüzölçümü", stat_coords: "Mount Byrd Koordinatları",
-                stat_temp: "Ortalama Kış Sıcaklığı", stat_year: "Keşif Yılı",
-                details_heading: "<span>Marie Byrd Land</span> ve Antarktika Rehberi", details_sub: "Batı Antarktika'nın coğrafyası, tarihi ve hukuki statüsü.",
-                c1_title: "Coğrafi Konum", c1_text: "Batı Antarktika'da Ross Buz Sahanlığı'nın doğusunda yer alır ve Mount Byrd'ü kapsar.",
-                c2_title: "Hukuki Statü", c2_text: "Hiçbir devletin hak iddia etmediği en büyük kara parçasıdır; 1959 Antarktika Antlaşması ile korunur.",
-                c3_title: "Tarih ve Keşif", c3_text: "1929 yılında Amerikalı kaşif Amiral Richard E. Byrd tarafından eşi Marie'nin anısına adlandırılmıştır.",
-                c4_title: "Buzullar ve Volkanlar", c4_text: "Kalın Batı Antarktika Buz Tabakası ve volkanik zirvelerle kaplıdır.",
-                c5_title: "Penguenler ve Yaşam", c5_text: "Kıyılarda İmparator, Adélie ve Gentoo penguen kolonileri yaşar.",
-                c6_title: "Bilimsel Araştırmalar", c6_text: "Uluslararası bilim ekipleri buzulları ve küresel iklimi inceler.",
-                map_heading: "<span>Mount Byrd & Marie Byrd Land</span> Resmi Haritası", map_sub: "Antarktika'daki Mount Byrd'ün tam koordinatlarını keşfedin.",
-                map_loc_label: "Konum:", map_open_btn: "Google Haritalar'da Aç ↗",
-                gal_heading: "<span>Antarktika</span>'dan Gerçek Fotoğraflar", gal_sub: "Penguenler, buzdağları ve Antarktika haritası.",
-                g1_title: "İmparator Pengueni", g1_sub: "Snow Hill Adası, Antarktika", g2_title: "Adélie Pengueni", g2_sub: "Hope Körfezi, Antarktika",
-                g3_title: "Kar Üzerinde Gentoo Penguenleri", g3_sub: "Neko Limanı, Antarktika", g4_title: "Buzdağları ve Karlı Dağlar", g4_sub: "Gerlache Boğazı, Antarktika",
-                g5_title: "Ross Buz Sahanlığı", g5_sub: "Marie Byrd Land Batı Sınırı", g6_title: "Antarktika Haritası", g6_sub: "Marie Byrd Land Bölgesi",
-                footer_desc: "Antarktika ve Marie Byrd Land resmi bilgi portalı.", rights: "Tüm Hakları Saklıdır"
-            },
-            pt: {
-                dir: "ltr", nav_overview: "Visão Geral", nav_details: "Guia Detalhado", nav_map: "Mapa Oficial", nav_gallery: "Galeria Antártica",
-                hero_tag: "Portal Oficial da Antártida • Terra de Marie Byrd", hero_title: "Terra de Marie Byrd <span>Antarctica</span>",
-                hero_desc: "O coração gelado da Antártida Ocidental, lar do Monte Byrd e o maior território não reivindicado do planeta.",
-                btn_map: "Explorar Mapa", btn_details: "Ler Guia", stat_area: "Área Total", stat_coords: "Coordenadas do Monte Byrd",
-                stat_temp: "Temperatura Média no Inverno", stat_year: "Ano de Descoberta",
-                details_heading: "Guia Detalhado da <span>Terra de Marie Byrd</span>", details_sub: "Geografia, história e estatuto jurídico único na Antártida.",
-                c1_title: "Geografia", c1_text: "Situada na Antártida Ocidental a leste da Plataforma de Gelo Ross, onde fica o Monte Byrd.",
-                c2_title: "Estatuto Jurídico", c2_text: "Maior território sem soberania nacional, protegido pelo Tratado da Antártida de 1959.",
-                c3_title: "História", c3_text: "Nomeada em 1929 pelo explorador Richard E. Byrd em homenagem à sua esposa Marie.",
-                c4_title: "Relevo Glacial", c4_text: "Coberta por espesso manto de gelo e picos vulcânicos como o Monte Byrd.",
-                c5_title: "Pinguins e Fauna", c5_text: "Colônias de pinguins-imperador, Adélia e Gentoo nas costas geladas.",
-                c6_title: "Pesquisa Científica", c6_text: "Expedições internacionais monitoram as geleiras e o clima global.",
-                map_heading: "Mapa Oficial de <span>Mount Byrd & Marie Byrd Land</span>", map_sub: "Coordenadas exatas do Monte Byrd na Antártida.",
-                map_loc_label: "Localização:", map_open_btn: "Abrir no Google Maps ↗",
-                gal_heading: "Fotos Reais da <span>Antártida</span>", gal_sub: "Pinguins, icebergs e mapa da Antártida.",
-                g1_title: "Pinguim-imperador", g1_sub: "Ilha Snow Hill, Antártida", g2_title: "Pinguim-de-Adélia", g2_sub: "Baía Hope, Antártida",
-                g3_title: "Pinguins-gentoo na neve", g3_sub: "Porto Neko, Antártida", g4_title: "Icebergs e montanhas", g4_sub: "Estreito de Gerlache, Antártida",
-                g5_title: "Plataforma de Gelo Ross", g5_sub: "Limite oeste de Marie Byrd Land", g6_title: "Mapa da Antártida", g6_sub: "Terra de Marie Byrd",
-                footer_desc: "Portal oficial da Antártida e Terra de Marie Byrd.", rights: "Todos os direitos reservados"
-            },
-            it: {
-                dir: "ltr", nav_overview: "Panoramica", nav_details: "Guida dettagliata", nav_map: "Mappa ufficiale", nav_gallery: "Galleria Antartide",
-                hero_tag: "Portale Ufficiale dell'Antartide • Terra di Marie Byrd", hero_title: "Terra di Marie Byrd <span>Antarctica</span>",
-                hero_desc: "Il cuore ghiacciato dell'Antartide Occidentale, sede del Monte Byrd e il più grande territorio non rivendicato della Terra.",
-                btn_map: "Esplora la mappa", btn_details: "Leggi la guida", stat_area: "Superficie totale", stat_coords: "Coordinate Monte Byrd",
-                stat_temp: "Temperatura media invernale", stat_year: "Anno di scoperta",
-                details_heading: "Guida alla <span>Terra di Marie Byrd</span> e all'Antartide", details_sub: "Geografia, storia e status giuridico dell'Antartide Occidentale.",
-                c1_title: "Geografia", c1_text: "Situata nell'Antartide Occidentale a est della barriera di Ross, ospita il Monte Byrd.",
-                c2_title: "Status giuridico", c2_text: "Il più grande territorio privo di sovranità nazionale, tutelato dal Trattato Antartico.",
-                c3_title: "Storia", c3_text: "Chiamata così nel 1929 dall'esploratore Richard E. Byrd in onore della moglie Marie.",
-                c4_title: "Ghiacciai e vulcani", c4_text: "Coperta dalla calotta glaciale dell'Antartide Occidentale e da vette vulcaniche.",
-                c5_title: "Pinguini e fauna", c5_text: "Colonie di pinguini imperatore, Adelia e Gentoo lungo le coste.",
-                c6_title: "Ricerca scientifica", c6_text: "Missioni internazionali studiano i ghiacci polari e il clima.",
-                map_heading: "Mappa ufficiale di <span>Mount Byrd & Marie Byrd Land</span>", map_sub: "Coordinate esatte del Monte Byrd in Antartide.",
-                map_loc_label: "Posizione:", map_open_btn: "Apri in Google Maps ↗",
-                gal_heading: "Foto autentiche dell'<span>Antartide</span>", gal_sub: "Pinguini, iceberg e mappa dell'Antartide.",
-                g1_title: "Pinguino imperatore", g1_sub: "Isola Snow Hill, Antartide", g2_title: "Pinguino di Adelia", g2_sub: "Baia della Speranza, Antartide",
-                g3_title: "Pinguini Gentoo sulla neve", g3_sub: "Porto Neko, Antartide", g4_title: "Iceberg e montagne innevate", g4_sub: "Stretto di Gerlache, Antartide",
-                g5_title: "Barriera di Ross", g5_sub: "Confine occidentale di Marie Byrd Land", g6_title: "Mappa dell'Antartide", g6_sub: "Terra di Marie Byrd",
-                footer_desc: "Portale ufficiale dell'Antartide e della Terra di Marie Byrd.", rights: "Tutti i diritti riservati"
-            },
-            hi: {
-                dir: "ltr", nav_overview: "परिचय", nav_details: "विस्तृत जानकारी", nav_map: "आधिकारिक मानचित्र", nav_gallery: "अंटार्कटिका गैलरी",
-                hero_tag: "अंटार्कटिका आधिकारिक पोर्टल • मैरी बर्ड लैंड", hero_title: "मैरी बर्ड लैंड <span>Marie Byrd Land</span>",
-                hero_desc: "पश्चिमी अंटार्कटिका का बर्फीला हृदय, माउंट बर्ड का घर और पृथ्वी पर सबसे बड़ा बिना दावे वाला क्षेत्र।",
-                btn_map: "मानचित्र देखें", btn_details: "विस्तृत विवरण पढ़ें", stat_area: "कुल क्षेत्रफल", stat_coords: "माउंट बर्ड निर्देशांक",
-                stat_temp: "औसत शीतकालीन तापमान", stat_year: "खोज का वर्ष",
-                details_heading: "<span>मैरी बर्ड लैंड</span> और अंटार्कटिका का विवरण", details_sub: "पश्चिमी अंटार्कटिका के भूगोल, इतिहास और कानूनी स्थिति की जानकारी।",
-                c1_title: "भौगोलिक स्थिति", c1_text: "पश्चिमी अंटार्कटिका में रॉस आइस शेल्फ के पूर्व में स्थित है, जहाँ माउंट बर्ड स्थित है।",
-                c2_title: "अद्वितीय कानूनी स्थिति", c2_text: "पृथ्वी पर सबसे बड़ा दावा-रहित क्षेत्र, जो 1959 की अंटार्कटिक संधि के तहत वैज्ञानिक अनुसंधान के लिए सुरक्षित है।",
-                c3_title: "इतिहास और खोज", c3_text: "1929 में अमेरिकी खोजकर्ता रिचर्ड ई. बर्ड ने अपनी पत्नी मैरी के नाम पर इसका नाम रखा।",
-                c4_title: "हिमनद और ज्वालामुखी", c4_text: "विशाल बर्फ की चादर और माउंट बर्ड जैसे ज्वालामुखी शिखरों से ढका हुआ क्षेत्र।",
-                c5_title: "पेंगुइन और वन्यजीवन", c5_text: "तटों पर एम्परर, एडेली और जेंटू पेंगुइन की कॉलोनियां पाई जाती हैं।",
-                c6_title: "वैज्ञानिक अनुसंधान", c6_text: "अंतर्राष्ट्रीय वैज्ञानिक दल यहाँ की बर्फ और जलवायु का अध्ययन करते हैं।",
-                map_heading: "<span>Mount Byrd & Marie Byrd Land</span> आधिकारिक मानचित्र", map_sub: "अंटार्कटिका में माउंट बर्ड की सटीक स्थिति देखें।",
-                map_loc_label: "स्थान:", map_open_btn: "Google Maps में खोलें ↗",
-                gal_heading: "<span>अंटार्कटिका</span> की वास्तविक तस्वीरें", gal_sub: "पेंगुइन, हिमखंड और अंटार्कटिका का मानचित्र।",
-                g1_title: "एम्परर पेंगुइन", g1_sub: "स्नो हिल द्वीप, अंटार्कटिका", g2_title: "एडेली पेंगुइन", g2_sub: "होप बे, अंटार्कटिका",
-                g3_title: "बर्फ पर जेंटू पेंगुइन", g3_sub: "नेको हार्बर, अंटार्कटिका", g4_title: "अंटार्कटिक हिमखंड", g4_sub: "गेरलाचे जलडमरूमध्य, अंटार्कटिका",
-                g5_title: "रॉस आइस शेल्फ", g5_sub: "मैरी बर्ड लैंड की पश्चिमी सीमा", g6_title: "अंटार्कटिका का मानचित्र", g6_sub: "मैरी बर्ड लैंड क्षेत्र",
-                footer_desc: "अंटार्कटिका और मैरी बर्ड लैंड का आधिकारिक पोर्टल।", rights: "सर्वाधिकार सुरक्षित"
-            },
-            ur: {
-                dir: "rtl", nav_overview: "تعارف", nav_details: "تفصیلی جائزہ", nav_map: "سرکاری نقشہ", nav_gallery: "انٹارکٹیکا گیلری",
-                hero_tag: "انٹارکٹیکا کا سرکاری پورٹل • میری برڈ لینڈ", hero_title: "میری برڈ لینڈ <span>Marie Byrd Land</span>",
-                hero_desc: "مغربی انٹارکٹیکا کا برفانی دل، ماؤنٹ برڈ کا مسکن اور زمین پر کسی بھی ملک کے دعوے سے آزاد سب سے بڑا خطہ۔",
-                btn_map: "نقشہ دیکھیں", btn_details: "تفصیل پڑھیں", stat_area: "کل رقبہ", stat_coords: "ماؤنٹ برڈ کے نقاط",
-                stat_temp: "سردیوں کا اوسط درجہ حرارت", stat_year: "دریافت کا سال",
-                details_heading: "<span>میری برڈ لینڈ</span> اور انٹارکٹیکا کی تفصیل", details_sub: "مغربی انٹارکٹیکا کے جغرافیہ، تاریخ اور قانونی حیثیت کا جامع جائزہ۔",
-                c1_title: "جغرافیائی محل وقوع", c1_text: "مغربی انٹارکٹیکا میں راس آئس شیلف کے مشرق میں واقع ہے اور اس میں ماؤنٹ برڈ شامل ہے۔",
-                c2_title: "منفرد قانونی حیثیت", c2_text: "دنیا کا سب سے بڑا غیر دعویٰ شدہ علاقہ جو 1959 کے انٹارکٹیکا معاہدے کے تحت سائنسی تحقیق کے لیے مخصوص ہے۔",
-                c3_title: "تاریخ اور دریافت", c3_text: "1929 میں امریکی مہم جو رچرڈ ای برڈ نے اپنی اہلیہ میری کے نام پر اس کا نام رکھا۔",
-                c4_title: "برفانی تودے اور آتش فشاں", c4_text: "یہ خطہ برف کی موٹی تہہ اور ماؤنٹ برڈ جیسی چوٹیوں سے ڈھکا ہوا ہے۔",
-                c5_title: "پینگوئن اور جنگلی حیات", c5_text: "ساحلوں پر ایمپرر اور ایڈیلی پینگوئن کی بستیاں پائی جاتی ہیں۔",
-                c6_title: "سائنسی تحقیق", c6_text: "عالمی سائنسی مشن یہاں کی برفانی تہوں اور موسمیاتی تبدیلیوں کا مطالعہ کرتے ہیں۔",
-                map_heading: "<span>Mount Byrd & Marie Byrd Land</span> کا سرکاری نقشہ", map_sub: "انٹارکٹیکا میں ماؤنٹ برڈ کا درست مقام دیکھیں۔",
-                map_loc_label: "مقام:", map_open_btn: "گوگل میپس میں کھولیں ↗",
-                gal_heading: "<span>انٹارکٹیکا</span> کی مستند تصاویر", gal_sub: "پینگوئن، برفانی پہاڑ اور انٹارکٹیکا کا نقشہ۔",
-                g1_title: "ایمپرر پینگوئن", g1_sub: "سنو ہل جزیرہ، انٹارکٹیکا", g2_title: "ایڈیلی پینگوئن", g2_sub: "ہوپ بے، انٹارکٹیکا",
-                g3_title: "برف پر جینٹو پینگوئن", g3_sub: "نیکو ہاربر، انٹارکٹیکا", g4_title: "برفانی پہاڑ اور گلیشیئر", g4_sub: "گیرلاش آبنائے، انٹارکٹیکا",
-                g5_title: "راس آئس شیلف", g5_sub: "میری برڈ لینڈ کی مغربی سرحد", g6_title: "انٹارکٹیکا کا نقشہ", g6_sub: "میری برڈ لینڈ کا علاقہ",
-                footer_desc: "انٹارکٹیکا اور میری برڈ لینڈ کا سرکاری معلوماتی پورٹل۔", rights: "جملہ حقوق محفوظ ہیں"
-            },
-            he: {
-                dir: "rtl", nav_overview: "סקירה", nav_details: "מדריך מפורט", nav_map: "מפה רשמית", nav_gallery: "גלריית אנטארקטיקה",
-                hero_tag: "הפורטל הרשמי של אנטארקטיקה • ארץ מרי בירד", hero_title: "ארץ מרי בירד <span>Marie Byrd Land</span>",
-                hero_desc: "הלב הקפוא של מערב אנטארקטיקה, משכנו של הר בירד (Mount Byrd) והשטח הגדול ביותר בעולם ללא תביעת ריבונות.",
-                btn_map: "צפייה במפה", btn_details: "קריאת המדריך", stat_area: "שטח כולל", stat_coords: "קואורדינטות הר בירד",
-                stat_temp: "טמפרטורת חורף ממוצעת", stat_year: "שנת הגילוי",
-                details_heading: "מדריך מפורט על <span>ארץ מרי בירד</span> ואנטארקטיקה", details_sub: "סקירה מקיפה על הגיאוגרפיה, ההיסטוריה והמעמד המשפטי של מערב אנטארקטיקה.",
-                c1_title: "מיקום גיאוגרפי", c1_text: "שוכנת במערב אנטארקטיקה ממזרח למדף הקרח רוס וכוללת את הר בירד (Mount Byrd).",
-                c2_title: "מעמד משפטי ייחודי", c2_text: "האזור הגדול ביותר בכדור הארץ ללא ריבונות מדינית, המוגן תחת אמנת אנטארקטיקה למחקר מדעי.",
-                c3_title: "היסטוריה וגילוי", c3_text: "נקראה בשנת 1929 על ידי החוקר האמריקאי ריצ'רד בירד על שם אשתו מרי.",
-                c4_title: "קרחונים והרי געש", c4_text: "מכוסה במעטה קרח עצום ופסגות געשיות כמו הר סידלי והר בירד.",
-                c5_title: "פינגווינים וחיות בר", c5_text: "מושבות של פינגווין קיסרי, פינגווין אדלי ופינגווין לבן-אוזן לאורך החופים.",
-                c6_title: "מחקר מדעי", c6_text: "משלחות בינלאומיות חוקרות את דינמיקת הקרחונים והאקלים העולמי.",
-                map_heading: "המפה הרשמית של <span>Mount Byrd & Marie Byrd Land</span>", map_sub: "המיקום המדויק של הר בירד באנטארקטיקה.",
-                map_loc_label: "מיקום:", map_open_btn: "פתיחה ב-Google Maps ↗",
-                gal_heading: "תמונות מאומתות מ<span>אנטארקטיקה</span>", gal_sub: "פינגווינים, קרחונים ומפת אנטארקטיקה.",
-                g1_title: "פינגווין קיסרי", g1_sub: "האי סנואו היל, אנטארקטיקה", g2_title: "פינגווין אדלי", g2_sub: "מפרץ התקווה, אנטארקטיקה",
-                g3_title: "פינגווינים על השלג", g3_sub: "נמל נקו, אנטארקטיקה", g4_title: "קרחונים והרים מושלגים", g4_sub: "מצר ז'רלאש, אנטארקטיקה",
-                g5_title: "מדף הקרח רוס", g5_sub: "הגבול המערבי של ארץ מרי בירד", g6_title: "מפת אנטארקטיקה", g6_sub: "מיקום ארץ מרי בירד",
-                footer_desc: "הפורטל הרשמי של אנטארקטיקה, ארץ מרי בירד והר בירד.", rights: "כל הזכויות שמורות"
-            },
-            fa: {
-                dir: "rtl", nav_overview: "نمای کلی", nav_details: "توضیحات کامل", nav_map: "نقشه رسمی", nav_gallery: "گالری قطب جنوب",
-                hero_tag: "پورتال رسمی جنوبگان • سرزمین ماری برد", hero_title: "سرزمین ماری برد <span>Marie Byrd Land</span>",
-                hero_desc: "قلب یخی بکر در غرب جنوبگان (Antarctica)، محل کوه برد (Mount Byrd) و بزرگ‌ترین سرزمین بدون ادعای مالکیت در کره زمین.",
-                btn_map: "مشاهده نقشه", btn_details: "مطالعه توضیحات", stat_area: "مساحت کل", stat_coords: "مختصات کوه برد",
-                stat_temp: "میانگین دمای زمستان", stat_year: "سال کشف و نام‌گذاری",
-                details_heading: "شرح کامل <span>سرزمین ماری برد</span> و جنوبگان", details_sub: "راهنمای جامع جغرافیا، تاریخ و وضعیت حقوقی غرب جنوبگان.",
-                c1_title: "موقعیت جغرافیایی", c1_text: "در غرب جنوبگان و شرق یخ‌تاق راس قرار دارد و شامل کوه برد (Mount Byrd) است.",
-                c2_title: "وضعیت حقوقی منحصربه‌فرد", c2_text: "بزرگ‌ترین منطقه بدون حاکمیت ملی در جهان که تحت پیمان جنوبگان برای پژوهش‌های علمی محافظت می‌شود.",
-                c3_title: "تاریخچه و کشف", c3_text: "در سال ۱۹۲۹ توسط کاوشگر آمریکایی ریچارد ای. برد به افتخار همسرش ماری نام‌گذاری شد.",
-                c4_title: "یخچال‌ها و آتشفشان‌ها", c4_text: "پوشیده از صفحه یخی عظیم غرب جنوبگان و قله‌های آتشفشانی همچون کوه برد.",
-                c5_title: "پنگوئن‌ها و حیات وحش", c5_text: "کلونی‌های پنگوئن امپراتور و آدلی در سواحل یخی این منطقه زندگی می‌کنند.",
-                c6_title: "پژوهش‌های علمی", c6_text: "هیئت‌های علمی بین‌المللی یخچال‌های جنوبگان و اقلیم جهانی را بررسی می‌کنند.",
-                map_heading: "نقشه رسمی <span>Mount Byrd & Marie Byrd Land</span>", map_sub: "موقعیت دقیق کوه برد در جنوبگان را روی نقشه ببینید.",
-                map_loc_label: "موقعیت:", map_open_btn: "باز کردن در گوگل مپس ↗",
-                gal_heading: "تصاویر مستند از <span>جنوبگان (Antarctica)</span>", gal_sub: "پنگوئن‌ها، کوه‌های یخی و نقشه جنوبگان.",
-                g1_title: "پنگوئن امپراتور", g1_sub: "جزیره اسنو هیل، جنوبگان", g2_title: "پنگوئن آدلی", g2_sub: "خلیج امید، جنوبگان",
-                g3_title: "پنگوئن‌های جنتو روی برف", g3_sub: "بندر نکو، جنوبگان", g4_title: "کوه‌های یخی و برفی", g4_sub: "تنگه گرلاش، جنوبگان",
-                g5_title: "یخ‌تاق راس", g5_sub: "مرز غربی سرزمین ماری برد", g6_title: "نقشه جنوبگان", g6_sub: "موقعیت سرزمین ماری برد",
-                footer_desc: "پورتال رسمی جنوبگان، سرزمین ماری برد و کوه برد.", rights: "تمامی حقوق محفوظ است"
-            },
-            id: {
-                dir: "ltr", nav_overview: "Ikhtisar", nav_details: "Panduan Lengkap", nav_map: "Peta Resmi", nav_gallery: "Galeri Antartika",
-                hero_tag: "Portal Resmi Antartika • Marie Byrd Land", hero_title: "Marie Byrd Land <span>Antarctica</span>",
-                hero_desc: "Jantung es murni di Antartika Barat, rumah bagi Gunung Byrd (Mount Byrd) dan wilayah tak bertuan terbesar di Bumi.",
-                btn_map: "Lihat Peta", btn_details: "Baca Panduan", stat_area: "Luas Total", stat_coords: "Koordinat Mount Byrd",
-                stat_temp: "Suhu Rata-rata Musim Dingin", stat_year: "Tahun Penemuan",
-                details_heading: "Panduan Lengkap <span>Marie Byrd Land</span> & Antartika", details_sub: "Geografi, sejarah, dan status hukum unik Antartika Barat.",
-                c1_title: "Lokasi Geografis", c1_text: "Terletak di Antartika Barat di sebelah timur Paparan Es Ross, mencakup Mount Byrd.",
-                c2_title: "Status Hukum Unik", c2_text: "Wilayah terbesar tanpa klaim negara mana pun, dilindungi Perjanjian Antartika untuk penelitian ilmiah.",
-                c3_title: "Sejarah & Penemuan", c3_text: "Dinamai pada tahun 1929 oleh penjelajah Richard E. Byrd untuk menghormati istrinya, Marie.",
-                c4_title: "Medan Es & Gunung Berapi", c4_text: "Tertutup lapisan es tebal dengan puncak vulkanik seperti Gunung Sidley dan Mount Byrd.",
-                c5_title: "Penguin & Satwa Liar", c5_text: "Koloni penguin Kaisar, Adélie, dan Gentoo hidup di pesisir es Antartika.",
-                c6_title: "Penelitian Ilmiah", c6_text: "Ekspedisi internasional memantau lapisan es dan iklim global.",
-                map_heading: "Peta Resmi <span>Mount Byrd & Marie Byrd Land</span>", map_sub: "Koordinat tepat Mount Byrd di Antartika.",
-                map_loc_label: "Lokasi:", map_open_btn: "Buka di Google Maps ↗",
-                gal_heading: "Foto Asli <span>Antartika</span>", gal_sub: "Penguin, gunung es, dan peta wilayah Antartika.",
-                g1_title: "Penguin Kaisar", g1_sub: "Pulau Snow Hill, Antartika", g2_title: "Penguin Adélie", g2_sub: "Teluk Hope, Antartika",
-                g3_title: "Penguin Gentoo di atas Salju", g3_sub: "Pelabuhan Neko, Antartika", g4_title: "Gunung Es Antartika", g4_sub: "Selat Gerlache, Antartika",
-                g5_title: "Paparan Es Ross", g5_sub: "Batas Barat Marie Byrd Land", g6_title: "Peta Antartika", g6_sub: "Wilayah Marie Byrd Land",
-                footer_desc: "Portal resmi Antartika dan Marie Byrd Land.", rights: "Hak Cipta Dilindungi"
-            },
-            nl: {
-                dir: "ltr", nav_overview: "Overzicht", nav_details: "Details", nav_map: "Officiële Kaart", nav_gallery: "Antarctica Galerij",
-                hero_tag: "Officieel Portaal van Antarctica • Marie Byrdland", hero_title: "Marie Byrdland <span>Antarctica</span>",
-                hero_desc: "Het ongerepte ijzige hart van West-Antarctica, de thuisbasis van Mount Byrd en het grootste niet-geclaimde gebied op aarde.",
-                btn_map: "Bekijk Kaart", btn_details: "Lees Gids", stat_area: "Totale Oppervlakte", stat_coords: "Mount Byrd Coördinaten",
-                stat_temp: "Gemiddelde Wintertemperatuur", stat_year: "Jaar van Ontdekking",
-                details_heading: "Uitgebreide Gids over <span>Marie Byrdland</span>", details_sub: "Geografie, geschiedenis en juridische status van West-Antarctica.",
-                c1_title: "Geografie", c1_text: "Gelegen in West-Antarctica ten oosten van het Ross-ijsplateau, inclusief Mount Byrd.",
-                c2_title: "Juridische Status", c2_text: "Grootste gebied zonder nationale claim, beschermd onder het Antarctisch Verdrag.",
-                c3_title: "Geschiedenis", c3_text: "In 1929 vernoemd door ontdekkingsreiziger Richard E. Byrd naar zijn vrouw Marie.",
-                c4_title: "IJs & Vulkanen", c4_text: "Bedekt door de West-Antarctische ijskap en vulkanische toppen zoals Mount Byrd.",
-                c5_title: "Pinguïns & Natuur", c5_text: "Kolonies keizerspinguïns, adeliepinguïns en ezelspinguïns langs de kusten.",
-                c6_title: "Wetenschappelijk Onderzoek", c6_text: "Internationaal onderzoek naar ijskappen en klimaatverandering.",
-                map_heading: "Officiële Kaart van <span>Mount Byrd & Marie Byrd Land</span>", map_sub: "Exacte coördinaten van Mount Byrd op Antarctica.",
-                map_loc_label: "Locatie:", map_open_btn: "Openen in Google Maps ↗",
-                gal_heading: "Echte Foto's van <span>Antarctica</span>", gal_sub: "Pinguïns, ijsbergen en kaart van Antarctica.",
-                g1_title: "Keizerspinguïn", g1_sub: "Snow Hill Island, Antarctica", g2_title: "Adeliepinguïn", g2_sub: "Hope Bay, Antarctica",
-                g3_title: "Ezelspinguïns in de sneeuw", g3_sub: "Neko Harbour, Antarctica", g4_title: "IJsbergen en sneeuwbergen", g4_sub: "Straat van Gerlache, Antarctica",
-                g5_title: "Ross-ijsplateau", g5_sub: "Westgrens van Marie Byrdland", g6_title: "Kaart van Antarctica", g6_sub: "Marie Byrdland",
-                footer_desc: "Officieel portaal van Antarctica en Marie Byrdland.", rights: "Alle rechten voorbehouden"
-            },
-            pl: {
-                dir: "ltr", nav_overview: "Przegląd", nav_details: "Szczegóły", nav_map: "Oficjalna Mapa", nav_gallery: "Galeria Antarktydy",
-                hero_tag: "Oficjalny Portal Antarktydy • Ziemia Marii Byrd", hero_title: "Ziemia Marii Byrd <span>Antarctica</span>",
-                hero_desc: "Lodowe serce Antarktydy Zachodniej, dom góry Byrd (Mount Byrd) i największe terytorium niczyje na Ziemi.",
-                btn_map: "Zobacz mapę", btn_details: "Czytaj przewodnik", stat_area: "Całkowita powierzchnia", stat_coords: "Współrzędne Mount Byrd",
-                stat_temp: "Średnia temperatura zimą", stat_year: "Rok odkrycia",
-                details_heading: "Przewodnik po <span>Ziemi Marii Byrd</span> i Antarktydzie", details_sub: "Geografia, historia i status prawny Antarktydy Zachodniej.",
-                c1_title: "Geografia", c1_text: "Położona w Antarktydzie Zachodniej na wschód od Lodowca Szelfowego Rossa, obejmuje Mount Byrd.",
-                c2_title: "Status prawny", c2_text: "Największy obszar bez roszczeń państwowych, chroniony Układem Antarktycznym.",
-                c3_title: "Historia", c3_text: "Nazwana w 1929 roku przez odkrywcę Richarda E. Byrda na cześć jego żony Marii.",
-                c4_title: "Lądolód i wulkany", c4_text: "Pokryta lądolodem Antarktydy Zachodniej ze szczytami wulkanicznymi takimi jak Mount Byrd.",
-                c5_title: "Pingwiny i przyroda", c5_text: "Kolonie pingwinów cesarskich, Adeli i białobrewych na wybrzeżach.",
-                c6_title: "Badania naukowe", c6_text: "Międzynarodowe ekspedycje badają lądolód i klimat polarny.",
-                map_heading: "Oficjalna mapa <span>Mount Byrd & Marie Byrd Land</span>", map_sub: "Dokładne współrzędne Mount Byrd na Antarktydzie.",
-                map_loc_label: "Lokalizacja:", map_open_btn: "Otwórz w Google Maps ↗",
-                gal_heading: "Prawdziwe zdjęcia z <span>Antarktydy</span>", gal_sub: "Pingwiny, góry lodowe i mapa Antarktydy.",
-                g1_title: "Pingwin cesarski", g1_sub: "Wyspa Snow Hill, Antarktyda", g2_title: "Pingwin Adeli", g2_sub: "Zatoka Nadziei, Antarktyda",
-                g3_title: "Pingwiny białobrewe na śniegu", g3_sub: "Neko Harbour, Antarktyda", g4_title: "Góry lodowe i śnieżne szczyty", g4_sub: "Cieśnina Gerlache’a, Antarktyda",
-                g5_title: "Lodowiec Szelfowy Rossa", g5_sub: "Zachodnia granica Ziemi Marii Byrd", g6_title: "Mapa Antarktydy", g6_sub: "Ziemia Marii Byrd",
-                footer_desc: "Oficjalny portal Antarktydy i Ziemi Marii Byrd.", rights: "Wszelkie prawa zastrzeżone"
-            },
-            sv: {
-                dir: "ltr", nav_overview: "Översikt", nav_details: "Detaljerad Guide", nav_map: "Officiell Karta", nav_gallery: "Antarktis Galleri",
-                hero_tag: "Antarktis Officiella Portal • Marie Byrd Land", hero_title: "Marie Byrd Land <span>Antarctica</span>",
-                hero_desc: "Västantarktis isiga hjärta, hem för Mount Byrd och jordens största område utan territoriella anspråk.",
-                btn_map: "Utforska Karta", btn_details: "Läs Guide", stat_area: "Total Yta", stat_coords: "Mount Byrd Koordinater",
-                stat_temp: "Genomsnittlig Vintertemperatur", stat_year: "Upptäcktsår",
-                details_heading: "Detaljerad Guide om <span>Marie Byrd Land</span>", details_sub: "Geografi, historia och rättslig status i Västantarktis.",
-                c1_title: "Geografi", c1_text: "Beläget i Västantarktis öster om Ross shelfis och omfattar Mount Byrd.",
-                c2_title: "Rättslig Status", c2_text: "Största området utan statliga anspråk, skyddat under Antarktisfördraget.",
-                c3_title: "Historia", c3_text: "Namngivet 1929 av upptäcktsresanden Richard E. Byrd efter hans hustru Marie.",
-                c4_title: "Inlandsis & Vulkaner", c4_text: "Täckt av den västantarktiska inlandsisen med vulkantoppar som Mount Byrd.",
-                c5_title: "Pingviner & Djurliv", c5_text: "Kolonier av kejsarpingviner, adéliepingviner och åsnepingviner längs kusterna.",
-                c6_title: "Vetenskaplig Forskning", c6_text: "Internationella expeditioner studerar inlandsisen och det globala klimatet.",
-                map_heading: "Officiell Karta över <span>Mount Byrd & Marie Byrd Land</span>", map_sub: "Exakta koordinater för Mount Byrd i Antarktis.",
-                map_loc_label: "Plats:", map_open_btn: "Öppna i Google Maps ↗",
-                gal_heading: "Verifierade Foton från <span>Antarktis</span>", gal_sub: "Pingviner, isberg och karta över Antarktis.",
-                g1_title: "Kejsarpingvin", g1_sub: "Snow Hill Island, Antarktis", g2_title: "Adéliepingvin", g2_sub: "Hope Bay, Antarktis",
-                g3_title: "Åsnepingviner i snön", g3_sub: "Neko Harbour, Antarktis", g4_title: "Isberg och snöberg", g4_sub: "Gerlachesundet, Antarktis",
-                g5_title: "Ross shelfis", g5_sub: "Västra gränsen av Marie Byrd Land", g6_title: "Karta över Antarktis", g6_sub: "Marie Byrd Land",
-                footer_desc: "Officiell portal för Antarktis och Marie Byrd Land.", rights: "Alla rättigheter förbehållna"
             }
         };
 
         const selector = document.getElementById('language-selector');
 
         function applyLanguage(lang) {
-            const data = translations[lang] || translations.en;
+            const base = translations[lang] || translations.en;
+            const rtlLangs = ['ar', 'ur', 'he', 'fa'];
+            const dir = base.dir || (rtlLangs.includes(lang) ? 'rtl' : 'ltr');
+            const merged = Object.assign({}, translations.en, base);
             document.documentElement.lang = lang;
-            document.documentElement.dir = data.dir;
+            document.documentElement.dir = dir;
 
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
-                if (data[key]) {
-                    el.innerHTML = data[key];
+                if (merged[key]) {
+                    el.innerHTML = merged[key];
                 }
             });
+            setSlide(currentSlide);
         }
 
         selector.addEventListener('change', (e) => {
             applyLanguage(e.target.value);
         });
 
-        // تأثير تساقط الثلوج الخفيف
         const canvas = document.getElementById('snow-canvas');
         const ctx = canvas.getContext('2d');
         let width = canvas.width = window.innerWidth;
         let height = canvas.height = window.innerHeight;
 
-        const flakes = Array.from({ length: 65 }, () => ({
+        const flakes = Array.from({ length: 60 }, () => ({
             x: Math.random() * width,
             y: Math.random() * height,
-            r: Math.random() * 2.4 + 0.8,
-            d: Math.random() * 0.75 + 0.3
+            r: Math.random() * 2.3 + 0.8,
+            d: Math.random() * 0.7 + 0.3
         }));
 
         function drawSnow() {
             ctx.clearRect(0, 0, width, height);
-            ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.48)';
             ctx.beginPath();
             for (const f of flakes) {
                 ctx.moveTo(f.x, f.y);
